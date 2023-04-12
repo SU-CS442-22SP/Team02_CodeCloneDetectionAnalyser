@@ -62,3 +62,6 @@ The program has been created via IntelliJ and used in its compiler. In order to 
 
 -> OpenJDK-20
 -> Maven: org.antlr:antlr4-runtime:4.7
+
+After run, the output corresponds to the below meaning(with the simple dataset provided):
+There is 1 clone found, starting at line 0, column 9 and ending at line 1, column 1, which is a class declaration.
