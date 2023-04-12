@@ -16,19 +16,8 @@ public class CloneDetectionMain {
 	
 	private static int MIN_TOKENS = 20;
 
-	public static void main(String[] args) throws IOException {
-		InputConverter inputConverter = new InputConverter();
-		String input = inputConverter.getInput();
-		System.out.println(input);
-
-		ArrayList<CodeToken> tokens = new ArrayList<>();
-		Java8Lexer lexer = new Java8Lexer(CharStreams.fromString(input));
-		for (Token t = lexer.nextToken(); t.getType() != Lexer.EOF; t = lexer.nextToken()) {
-			CodeToken token = new CodeToken(t.getText(), getNormalizedText(t), null, t.getLine(), t.getCharPositionInLine());
-			tokens.add(token);
-		}
-		tokens.add(CodeToken.getTerminalToken());
-
+	public static void main(String[] args) {
+		ArrayList<CodeToken> tokens = readFiles(args);
 		detectClones(tokens, MIN_TOKENS);
 	}
 	

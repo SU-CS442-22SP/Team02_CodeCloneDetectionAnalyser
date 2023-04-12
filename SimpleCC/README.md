@@ -54,3 +54,11 @@ The program comprises four classes.
 This program is distributed under the MIT license (see LICENSE file).
 
 This program uses ANTLR4 distributed under the BSD license ([http://www.antlr.org/license.html]).
+
+To execute for me
+java -cp /Users/mataonbas/.m2/repository/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar:/Users/mataonbas/IdeaProjects/SimpleCC/target/SimpleCC-0.0.1-SNAPSHOT.jar jp.naist.se.simplecc.CloneDetectionMain /Users/mataonbas/IdeaProjects/SimpleCC/trialDataset
+
+The program has been created via IntelliJ and used in its compiler. In order to use the project you have to create a maven project with the given external libraries:
+
+-> OpenJDK-20
+-> Maven: org.antlr:antlr4-runtime:4.7
