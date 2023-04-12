@@ -58,6 +58,9 @@ This program uses ANTLR4 distributed under the BSD license ([http://www.antlr.or
 To execute for me
 java -cp /Users/mataonbas/.m2/repository/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar:/Users/mataonbas/IdeaProjects/SimpleCC/target/SimpleCC-0.0.1-SNAPSHOT.jar jp.naist.se.simplecc.CloneDetectionMain /Users/mataonbas/IdeaProjects/SimpleCC/trialDataset
 
+
+## FINDINGS
+
 The program has been created via IntelliJ and used in its compiler. In order to use the project you have to create a maven project with the given external libraries:
 
 -> OpenJDK-20
