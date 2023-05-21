@@ -11,57 +11,55 @@ public class CodeToken {
 	private int line;
 	private int charPositionInLine;
 	private long hash;
+	private int position; // New field to store the position of the token
 
-	private static MessageDigest digest;
-	
-	static {
-		try {
-			digest = MessageDigest.getInstance("SHA-1");
-		} catch (NoSuchAlgorithmException e) {
-			throw new RuntimeException(e);
-		}
-	}
-	
-	public CodeToken(String text, String normalized, File f, int line, int charPositionInLine) {
+	public CodeToken(String text, String normalized, File f, int line, int charPositionInLine, int position) {
 		this.text = text;
 		this.file = f;
 		this.line = line;
 		this.charPositionInLine = charPositionInLine;
+		this.position = position; // Initialize the new field
 		if (normalized != null) {
 			this.hash = getHash(normalized);
 		}
 	}
-	
+
 	public static CodeToken getTerminalToken() {
-		return new CodeToken(null, null, null, 0, 0);
+		return new CodeToken(null, null, null, 0, 0, 0); // Pass 0 as the position
 	}
-	
+
 	private long getHash(String s) {
-		digest.update(s.getBytes());
-		byte[] b = digest.digest();
 		long hash = 0;
-		for (int i=0; i<8; i++) {
-			hash = (hash << 8) + (long)b[i];
+		try {
+			MessageDigest digest = MessageDigest.getInstance("SHA-1");
+			digest.update(s.getBytes());
+			byte[] b = digest.digest();
+			for (int i=0; i<8; i++) {
+				hash = (hash << 8) + (long)b[i];
+			}
+		} catch (NoSuchAlgorithmException e) {
+			throw new RuntimeException(e);
 		}
 		return hash;
 	}
-	
+
 	public boolean isSameToken(CodeToken another) {
-		return this.text != null && another.text != null && this.hash == another.hash;
+		return this.text != null && another.text != null && this.hash == another.hash && this.text.equals(another.text) && this.position != another.position;
+		// Check if the tokens are at the same position
 	}
-	
+
 	public String getText() {
 		return text;
 	}
-	
+
 	public File getFile() {
 		return file;
 	}
-	
+
 	public int getLine() {
 		return line;
 	}
-	
+
 	public int getCharPositionInLine() {
 		return charPositionInLine;
 	}
@@ -69,7 +67,7 @@ public class CodeToken {
 	public int getEndCharPositionInLine() {
 		return charPositionInLine + text.length();
 	}
-	
+
 	@Override
 	public String toString() {
 		return file.getAbsolutePath() + "," + line + "," + charPositionInLine + "," + text + "," + hash;

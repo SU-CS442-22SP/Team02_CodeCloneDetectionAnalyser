@@ -1,71 +1,99 @@
 package jp.naist.se.simplecc;
 
-import java.io.FileWriter;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+
 public class SimpleCCExample {
-    public static void main(String[] args) {
-        // Load the dataset from the JSON file
-        String datasetPath = "dataset/newData.jsonl";
-        StringBuilder functionCodeBuilder = new StringBuilder();
-        try {
-            String datasetString = new String(Files.readAllBytes(Paths.get(datasetPath)));
-            String[] lines = datasetString.split("\n");
-            for (String line : lines) {
-                JSONObject obj = new JSONObject(line);
-                String func = obj.getString("func");
-                functionCodeBuilder.append(func);
+
+    public static void main(String[] args) throws IOException, InterruptedException, JSONException {
+        String directory = "trialDataset/";
+
+        Path filePath = Paths.get("dataset/data.jsonl");
+        BufferedReader reader = Files.newBufferedReader(filePath);
+        List<String> lines = new ArrayList<>();
+        String line;
+        while ((line = reader.readLine()) != null) {
+            lines.add(line);
+        }
+
+        // First, create all the files
+        for (int i = 0; i < lines.size(); i++) {
+            JSONObject jsonObject = new JSONObject(lines.get(i));
+            String func = jsonObject.getString("func");
+            String fileName = directory + "file_" + (i + 1) + ".java";
+            try (PrintWriter out = new PrintWriter(fileName)) {
+                out.println(func);
             }
-        } catch (IOException e) {
-            System.out.println("Failed to read dataset from " + datasetPath);
-            e.printStackTrace();
-            return;
-        } catch (JSONException e) {
-            e.printStackTrace();
         }
-
-        // Extract the function code from the dataset
-        String functionCode = functionCodeBuilder.toString();
-
-        // Create two files with the same function code
-        String file01Path = "trialDataset/file01.java";
-        String file02Path = "trialDataset/file02.java";
         try {
-            FileWriter file01Writer = new FileWriter(file01Path);
-            file01Writer.write("class Foo {\n");
-            file01Writer.write(functionCode);
-            file01Writer.write("}");
-            file01Writer.close();
+            FileWriter writer = new FileWriter("output.txt");
+            // Then, run SimpleCC on all pairs of files
+            for (int i = 0; i < lines.size(); i++) {
+                String fileName1 = directory + "file_" + (i + 1) + ".java";
+                for (int j = i + 1; j < lines.size(); j++) {
+                    String fileName2 = directory + "file_" + (j + 1) + ".java";
 
-            FileWriter file02Writer = new FileWriter(file02Path);
-            file02Writer.write("class Foo {\n");
-            file02Writer.write(functionCode);
-            file02Writer.write("}");
-            file02Writer.close();
-        } catch (IOException e) {
-            System.out.println("Failed to create files " + file01Path + " and " + file02Path);
-            e.printStackTrace();
-            return;
+                    if (!fileName1.equals(fileName2)) {
+                        System.out.println("Comparing file " + fileName1 + " and " + fileName2);
+                        // Running SimpleCC
+                        ProcessBuilder processBuilder = new ProcessBuilder("java", "-cp", "/Users/mataonbas/.m2/repository/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar:/Users/mataonbas/IdeaProjects/SimpleCC/simplecc.jar", "jp.naist.se.simplecc.CloneDetectionMain", fileName1, fileName2);
+                        processBuilder.redirectErrorStream(true); // Redirect stderr to stdout
+                        Process process = processBuilder.start();
+
+                        // Capturing the output of SimpleCC
+                        BufferedReader in = new BufferedReader(new InputStreamReader(process.getInputStream()));
+                        String simpleccOutput;
+                        //                    while ((simpleccOutput = in.readLine()) != null) {
+                        //                        if (simpleccOutput.contains("<pair>")) {
+                        //                            String output1 = in.readLine();
+                        //                            String output2 = in.readLine();
+                        //
+                        //                            System.out.println(simpleccOutput);
+                        //                            System.out.println(output1);
+                        //                            System.out.println(output2);
+                        //                        }
+                        //                    }
+                        while ((simpleccOutput = in.readLine()) != null) {
+                            if (simpleccOutput.contains("<pair>")) {
+                                String output1 = in.readLine();
+                                String output2 = in.readLine();
+
+                                // Get the file names of the two code fragments
+                                String file1 = output1.split(",")[0];
+                                String file2 = output2.split(",")[0];
+
+                                // Only print comparisons between different files
+                                if (!file1.equals(file2)) {
+                                    System.out.println(simpleccOutput);
+                                    System.out.println(output1);
+                                    System.out.println(output2);
+
+                                    writer.write(simpleccOutput + "\n");
+                                    writer.write(output1 + "\n");
+                                    writer.write(output2 + "\n");
+                                }
+                            }
+                        }
+
+                        // Wait for SimpleCC to finish
+                        int exitCode = process.waitFor();
+                        if (exitCode != 0) {
+                            System.err.println("Clone detection process exited with error code: " + exitCode);
+                        }
+                    }
+                }
+            }
+            writer.close();
         }
-
-        // Compare the two files using SimpleCC
-        String[] simpleCCArgs = {file01Path, file02Path};
-        try {
-            Process simpleCCProcess = new ProcessBuilder("java", "-jar", "SimpleCC.jar", file01Path, file02Path).start();
-            simpleCCProcess.waitFor();
-        } catch (IOException e) {
-            System.out.println("Failed to run SimpleCC");
-            e.printStackTrace();
-            return;
-        } catch (InterruptedException e) {
-            System.out.println("SimpleCC was interrupted");
-            e.printStackTrace();
-            return;
+        catch (IOException e){
+           e.printStackTrace();
         }
     }
 }
