@@ -29,8 +29,9 @@ public class CloneDetectionMain {
 		if (f.getName().toLowerCase().endsWith(".java")) {
 			try {
 				Java8Lexer lexer = new Java8Lexer(CharStreams.fromPath(f.toPath()));
-				for (Token t = lexer.nextToken(); t.getType() != Lexer.EOF; t = lexer.nextToken()) {
-					CodeToken token = new CodeToken(t.getText(), getNormalizedText(t), f, t.getLine(), t.getCharPositionInLine());
+				int position = 0; // A variable to store the position of each token
+				for (Token t = lexer.nextToken(); t.getType() != Lexer.EOF; t = lexer.nextToken(), position++) {
+					CodeToken token = new CodeToken(t.getText(), getNormalizedText(t), f, t.getLine(), t.getCharPositionInLine(), position);
 					tokens.add(token);
 				}
 				tokens.add(CodeToken.getTerminalToken());

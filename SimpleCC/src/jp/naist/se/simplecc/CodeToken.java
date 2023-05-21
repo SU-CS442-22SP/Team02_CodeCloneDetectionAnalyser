@@ -11,19 +11,21 @@ public class CodeToken {
 	private int line;
 	private int charPositionInLine;
 	private long hash;
+	private int position; // New field to store the position of the token
 
-	public CodeToken(String text, String normalized, File f, int line, int charPositionInLine) {
+	public CodeToken(String text, String normalized, File f, int line, int charPositionInLine, int position) {
 		this.text = text;
 		this.file = f;
 		this.line = line;
 		this.charPositionInLine = charPositionInLine;
+		this.position = position; // Initialize the new field
 		if (normalized != null) {
 			this.hash = getHash(normalized);
 		}
 	}
 
 	public static CodeToken getTerminalToken() {
-		return new CodeToken(null, null, null, 0, 0);
+		return new CodeToken(null, null, null, 0, 0, 0); // Pass 0 as the position
 	}
 
 	private long getHash(String s) {
@@ -42,7 +44,8 @@ public class CodeToken {
 	}
 
 	public boolean isSameToken(CodeToken another) {
-		return this.text != null && another.text != null && this.hash == another.hash && this.text.equals(another.text);
+		return this.text != null && another.text != null && this.hash == another.hash && this.text.equals(another.text) && this.position != another.position;
+		// Check if the tokens are at the same position
 	}
 
 	public String getText() {
