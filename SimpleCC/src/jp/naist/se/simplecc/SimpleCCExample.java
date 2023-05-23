@@ -33,11 +33,14 @@ public class SimpleCCExample {
             }
         }
         try {
-            FileWriter writer = new FileWriter("output.txt");
+            FileWriter writer = new FileWriter("clones.txt");
+            boolean cloneFound = false;
             // Then, run SimpleCC on all pairs of files
-            for (int i = 0; i < lines.size(); i++) {
+            //Outer loop
+            for (int i = 0; i < lines.size() && !cloneFound; i++) {
                 String fileName1 = directory + "file_" + (i + 1) + ".java";
-                for (int j = i + 1; j < lines.size(); j++) {
+                //Inner loop
+                for (int j = i + 1; j < lines.size() && !cloneFound; j++) {
                     String fileName2 = directory + "file_" + (j + 1) + ".java";
 
                     if (!fileName1.equals(fileName2)) {
@@ -78,6 +81,9 @@ public class SimpleCCExample {
                                     writer.write(simpleccOutput + "\n");
                                     writer.write(output1 + "\n");
                                     writer.write(output2 + "\n");
+
+                                    cloneFound = true;
+                                    break;
                                 }
                             }
                         }
@@ -89,6 +95,7 @@ public class SimpleCCExample {
                         }
                     }
                 }
+                cloneFound = false;
             }
             writer.close();
         }
