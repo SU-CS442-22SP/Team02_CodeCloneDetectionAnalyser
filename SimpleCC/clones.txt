@@ -1,0 +1,239 @@
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_1.java,123,21,127,13,Main	.	applyUserPreferences	(	)	;	}	catch	(	Exception	e	)	{	e	.	printStackTrace	(	)	;	}	s	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_5.java,18,12,22,10,e	.	printStackTrace	(	)	;	}	catch	(	IOException	e	)	{	e	.	printStackTrace	(	)	;	}	tv	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_2.java,12,12,23,13,public	Object	run	(	)	{	try	{	MessageDigest	digest	=	MessageDigest	.	getInstance	(	"SHA"	)	;	digest	.	update	(	buf	.	toString	(	)	.	getBytes	(	)	)	;	byte	[	]	data	=	digest	.	digest	(	)	;	serialNum	=	new	BASE64Encoder	(	)	.	encode	(	data	)	;	return	serialNum	;	}	catch	(	NoSuchAlgorithmException	exp	)	{	BootSecurityManager	.	securityLogger	.	log	(	Level	.	SEVERE	,	exp	.	getMessage	(	)	,	exp	)	;	return	buf	.	toString	(	)	;	}	}	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_3.java,1,12,12,13,public	Object	run	(	)	{	try	{	MessageDigest	digest	=	MessageDigest	.	getInstance	(	"SHA"	)	;	digest	.	update	(	buf	.	toString	(	)	.	getBytes	(	)	)	;	byte	[	]	data	=	digest	.	digest	(	)	;	serialNum	=	new	BASE64Encoder	(	)	.	encode	(	data	)	;	return	serialNum	;	}	catch	(	NoSuchAlgorithmException	exp	)	{	BootSecurityManager	.	securityLogger	.	log	(	Level	.	SEVERE	,	exp	.	getMessage	(	)	,	exp	)	;	return	buf	.	toString	(	)	;	}	}	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_3.java,6,63,9,71,)	;	return	serialNum	;	}	catch	(	NoSuchAlgorithmException	exp	)	{	BootSecurityManager	.	securityLogger	.	log	(	Level	.	SEVERE	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_373.java,14,21,17,43,)	;	return	root	;	}	catch	(	IOException	e	)	{	System	.	out	.	println	(	e	.	getMessage	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_4.java,25,16,28,13,{	if	(	wr	!=	null	)	wr	.	close	(	)	;	if	(	rd	!=	null	)	rd	.	close	(	)	;	}	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_25.java,15,18,18,9,{	if	(	in	!=	null	)	in	.	close	(	)	;	if	(	out	!=	null	)	out	.	close	(	)	;	}	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_5.java,15,25,21,9,)	;	}	}	catch	(	ClientProtocolException	e	)	{	e	.	printStackTrace	(	)	;	}	catch	(	IOException	e	)	{	e	.	printStackTrace	(	)	;	}	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_11.java,23,100,29,9,)	;	}	}	catch	(	PartInitException	e	)	{	e	.	printStackTrace	(	)	;	}	catch	(	NoSuchAlgorithmException	e	)	{	e	.	printStackTrace	(	)	;	}	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_6.java,10,23,13,26,err	.	println	(	e	.	toString	(	)	)	;	return	null	;	}	catch	(	IOException	e	)	{	System	.	err	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_48.java,17,12,20,24,logger	.	error	(	e	.	getMessage	(	)	)	;	return	null	;	}	catch	(	NoSuchAlgorithmException	nsae	)	{	logger	.	error	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_7.java,11,8,15,45,InputStream	in	=	null	;	OutputStream	out	=	null	;	try	{	in	=	new	FileInputStream	(	src	)	;	out	=	new	FileOutputStream	(	dest	)	;	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_25.java,2,8,6,42,FileOutputStream	out	=	null	;	FileInputStream	in	=	null	;	try	{	out	=	new	FileOutputStream	(	fout	)	;	in	=	new	FileInputStream	(	fin	)	;	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_8.java,24,71,29,41,;	}	finally	{	if	(	fos	!=	null	)	{	try	{	fos	.	close	(	)	;	}	catch	(	IOException	e	)	{	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_19.java,42,19,48,26,;	}	finally	{	if	(	statement	!=	null	)	{	try	{	statement	.	close	(	)	;	}	catch	(	SQLException	e	)	{	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_9.java,12,37,13,60,directory	.	list	(	)	;	for	(	int	i	=	0	;	i	<	files	.	length	;	i	++	)	{	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_14.java,2,8,3,47,LogFrame	.	getInstance	(	)	;	for	(	int	i	=	0	;	i	<	args	.	length	;	i	++	)	{	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_10.java,28,51,30,31,System	.	out	.	println	(	line	)	;	}	catch	(	IOException	e1	)	{	e1	.	printStackTrace	(	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_16.java,36,12,38,41,MusicBoxView	.	albumArtLabel	.	setIcon	(	ico	)	;	}	catch	(	MalformedURLException	ex1	)	{	MusicBoxView	.	showErrorDialog	(	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_11.java,26,12,29,9,e	.	printStackTrace	(	)	;	}	catch	(	NoSuchAlgorithmException	e	)	{	e	.	printStackTrace	(	)	;	}	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_14.java,85,21,88,13,Main	.	applyUserPreferences	(	)	;	}	catch	(	Exception	e	)	{	e	.	printStackTrace	(	)	;	}	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_12.java,10,59,12,22,)	;	BufferedReader	br	=	new	BufferedReader	(	new	InputStreamReader	(	url	.	openStream	(	)	)	)	;	System	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_15.java,11,71,13,22,)	;	BufferedReader	readIn	=	new	BufferedReader	(	new	InputStreamReader	(	httpcon	.	getInputStream	(	)	)	)	;	String	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_13.java,8,12,12,5,IOUtils	.	copy	(	is	,	os	)	;	}	finally	{	IOUtils	.	closeQuietly	(	is	)	;	}	}	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_255.java,6,16,10,9,IOUtils	.	copy	(	input	,	output	)	;	}	finally	{	IOUtils	.	closeQuietly	(	output	)	;	}	}	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_14.java,86,31,90,29,e	)	{	e	.	printStackTrace	(	)	;	}	}	catch	(	Throwable	e	)	{	e	.	printStackTrace	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_19.java,34,16,38,22,commit	)	{	con	.	commit	(	)	;	}	}	catch	(	SQLException	e	)	{	System	.	err	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_15.java,5,150,13,22,;	if	(	u	.	contains	(	" "	)	)	{	u	=	u	.	replace	(	" "	,	"+"	)	;	}	URL	url	=	new	URL	(	u	)	;	HttpURLConnection	httpcon	=	(	HttpURLConnection	)	url	.	openConnection	(	)	;	httpcon	.	addRequestProperty	(	"User-Agent"	,	"Mozilla/4.76"	)	;	BufferedReader	readIn	=	new	BufferedReader	(	new	InputStreamReader	(	httpcon	.	getInputStream	(	)	)	)	;	String	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_16.java,3,76,11,24,;	if	(	u	.	contains	(	" "	)	)	{	u	=	u	.	replace	(	" "	,	"+"	)	;	}	URL	url	=	new	URL	(	u	)	;	HttpURLConnection	httpcon	=	(	HttpURLConnection	)	url	.	openConnection	(	)	;	httpcon	.	addRequestProperty	(	"User-Agent"	,	"Mozilla/4.76"	)	;	BufferedReader	readIn	=	new	BufferedReader	(	new	InputStreamReader	(	httpcon	.	getInputStream	(	)	)	)	;	googleImages	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_16.java,9,67,11,24,)	;	BufferedReader	readIn	=	new	BufferedReader	(	new	InputStreamReader	(	httpcon	.	getInputStream	(	)	)	)	;	googleImages	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_18.java,3,92,5,18,)	;	BufferedReader	bufferedReader	=	new	BufferedReader	(	new	InputStreamReader	(	url	.	openStream	(	)	)	)	;	Vector	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_17.java,45,21,48,32,process	.	waitFor	(	)	;	md5sumFileOut	.	flush	(	)	;	md5sumFileOut	.	close	(	)	;	if	(	this	.	process	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_101.java,94,27,98,22,outChannel	.	size	(	)	;	in	.	close	(	)	;	out	.	close	(	)	;	if	(	this	.	verbose	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_18.java,3,92,5,18,)	;	BufferedReader	bufferedReader	=	new	BufferedReader	(	new	InputStreamReader	(	url	.	openStream	(	)	)	)	;	Vector	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_51.java,5,29,7,15,)	;	BufferedReader	input	=	new	BufferedReader	(	new	InputStreamReader	(	url	.	openStream	(	)	)	)	;	Pattern	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_19.java,3,39,6,28,long	id	,	boolean	commit	)	throws	SQLException	{	StringBuffer	SQL	=	null	;	Statement	statement	=	null	;	ResultSet	result_set	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_37.java,1,40,4,21,String	sourcePath	,	String	destinPath	)	throws	Exception	{	BufferedInputStream	in	=	null	;	BufferedOutputStream	out	=	null	;	byte	dataBuff	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_20.java,14,136,19,22,)	;	}	}	input	.	close	(	)	;	}	catch	(	IOException	io	)	{	System	.	out	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_88.java,12,52,17,29,)	;	}	}	in	.	close	(	)	;	}	catch	(	Exception	e	)	{	e	.	printStackTrace	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_21.java,8,31,11,23,zcodefile	)	;	myzzurl	=	new	URL	(	zcodefile	)	;	myzstream	=	myzzurl	.	openStream	(	)	;	zmemimage	=	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_100.java,31,64,35,19,src	)	;	fileOut	=	new	FileOutputStream	(	dst	)	;	outChannel	=	fileOut	.	getChannel	(	)	;	bzOut	=	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_22.java,3,8,4,54,InputStream	is	=	getClass	(	)	.	getResourceAsStream	(	"/"	+	instTemplate	)	;	InputStreamReader	isr	=	new	InputStreamReader	(	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_23.java,2,8,3,66,InputStream	reader	=	getClass	(	)	.	getResourceAsStream	(	"/"	+	instTemplate	)	;	ByteArrayOutputStream	content	=	new	ByteArrayOutputStream	(	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_23.java,54,8,61,23,buf	=	new	byte	[	2048	]	;	int	read	=	reader	.	read	(	buf	)	;	while	(	read	>	0	)	{	content	.	write	(	buf	,	0	,	read	)	;	read	=	reader	.	read	(	buf	)	;	}	reader	.	close	(	)	;	FileInputStream	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_24.java,4,15,11,11,buf	=	new	byte	[	2048	]	;	int	read	=	zipStream	.	read	(	buf	)	;	while	(	read	>	0	)	{	out	.	write	(	buf	,	0	,	read	)	;	read	=	zipStream	.	read	(	buf	)	;	}	zipStream	.	close	(	)	;	out	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_24.java,3,69,9,9,)	;	byte	[	]	buf	=	new	byte	[	2048	]	;	int	read	=	zipStream	.	read	(	buf	)	;	while	(	read	>	0	)	{	out	.	write	(	buf	,	0	,	read	)	;	read	=	zipStream	.	read	(	buf	)	;	}	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_25.java,6,40,12,13,)	;	byte	[	]	buf	=	new	byte	[	2048	]	;	int	read	=	in	.	read	(	buf	)	;	while	(	read	>	0	)	{	out	.	write	(	buf	,	0	,	read	)	;	read	=	in	.	read	(	buf	)	;	}	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_25.java,1,12,5,44,void	copy	(	File	fin	,	File	fout	)	throws	IOException	{	FileOutputStream	out	=	null	;	FileInputStream	in	=	null	;	try	{	out	=	new	FileOutputStream	(	fout	)	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_26.java,1,18,5,44,void	copyFile	(	File	source	,	File	destination	)	throws	IOException	{	FileChannel	in	=	null	;	FileChannel	out	=	null	;	try	{	in	=	new	FileInputStream	(	source	)	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_26.java,1,18,3,31,void	copyFile	(	File	source	,	File	destination	)	throws	IOException	{	FileChannel	in	=	null	;	FileChannel	out	=	null	;	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_37.java,1,11,3,40,void	copyFileToFileWithPaths	(	String	sourcePath	,	String	destinPath	)	throws	Exception	{	BufferedInputStream	in	=	null	;	BufferedOutputStream	out	=	null	;	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_27.java,5,12,7,21,digest	.	update	(	password	.	getBytes	(	)	)	;	}	catch	(	Exception	e	)	{	Log	.	error	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_45.java,13,12,15,21,app	.	setAppid	(	sb	.	toString	(	)	)	;	}	catch	(	NoSuchAlgorithmException	ex	)	{	java	.	util	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_28.java,25,41,31,9,)	;	}	finally	{	try	{	ftp	.	disconnect	(	)	;	}	catch	(	IOException	e	)	{	}	}	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_39.java,29,52,35,21,)	;	}	finally	{	try	{	ins	.	close	(	)	;	}	catch	(	Exception	ex	)	{	}	}	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_29.java,6,44,9,30,,	encoding	)	;	writer	.	flush	(	)	;	writer	.	close	(	)	;	inputStream	.	close	(	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_54.java,5,117,8,31,,	out	)	;	out	.	flush	(	)	;	out	.	close	(	)	;	System	.	setProperty	(	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_30.java,2,73,5,9,)	;	DcmParser	p	=	pfact	.	newDcmParser	(	in	)	;	Dataset	ds	=	fact	.	newDataset	(	)	;	p	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_68.java,52,66,55,20,)	;	Document	doc	=	db	.	parse	(	docFile	)	;	Element	root	=	doc	.	getDocumentElement	(	)	;	NamedNodeMap	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_31.java,9,107,13,46,)	;	InputStream	input	=	null	;	OutputStream	output	=	null	;	try	{	input	=	new	FileInputStream	(	source	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_43.java,14,81,18,52,)	;	DataOutputStream	output	=	null	;	BufferedReader	reader	=	null	;	try	{	output	=	new	DataOutputStream	(	connection	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_32.java,2,8,8,60,if	(	baseDirStr	.	endsWith	(	sep	)	)	{	baseDirStr	=	baseDirStr	.	substring	(	0	,	baseDirStr	.	length	(	)	-	1	)	;	}	if	(	destDirStr	.	endsWith	(	sep	)	)	{	destDirStr	=	destDirStr	.	substring	(	0	,	destDirStr	.	length	(	)	-	1	)	;	}	FileUtils	.	getInstance	(	)	.	createDirectory	(	baseDirStr	)	;	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_33.java,3,8,9,60,if	(	baseDirStr	.	endsWith	(	sep	)	)	{	baseDirStr	=	baseDirStr	.	substring	(	0	,	baseDirStr	.	length	(	)	-	1	)	;	}	if	(	destDirStr	.	endsWith	(	sep	)	)	{	destDirStr	=	destDirStr	.	substring	(	0	,	destDirStr	.	length	(	)	-	1	)	;	}	FileUtils	.	getInstance	(	)	.	createDirectory	(	destDirStr	)	;	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_33.java,1,43,42,21,String	baseDirStr	,	String	destDirStr	)	throws	Exception	{	long	plussQuotaSize	=	0	;	if	(	baseDirStr	.	endsWith	(	sep	)	)	{	baseDirStr	=	baseDirStr	.	substring	(	0	,	baseDirStr	.	length	(	)	-	1	)	;	}	if	(	destDirStr	.	endsWith	(	sep	)	)	{	destDirStr	=	destDirStr	.	substring	(	0	,	destDirStr	.	length	(	)	-	1	)	;	}	FileUtils	.	getInstance	(	)	.	createDirectory	(	destDirStr	)	;	BufferedInputStream	in	=	null	;	BufferedOutputStream	out	=	null	;	byte	dataBuff	[	]	=	new	byte	[	bufferSize	]	;	File	baseDir	=	new	File	(	baseDirStr	)	;	baseDir	.	mkdirs	(	)	;	if	(	!	baseDir	.	exists	(	)	)	{	createDirectory	(	baseDirStr	)	;	}	if	(	(	baseDir	.	exists	(	)	)	&&	(	baseDir	.	isDirectory	(	)	)	)	{	String	[	]	entryList	=	baseDir	.	list	(	)	;	if	(	entryList	.	length	>	0	)	{	for	(	int	pos	=	0	;	pos	<	entryList	.	length	;	pos	++	)	{	String	entryName	=	entryList	[	pos	]	;	String	oldPathFileName	=	baseDirStr	+	sep	+	entryName	;	File	entryFile	=	new	File	(	oldPathFileName	)	;	if	(	entryFile	.	isFile	(	)	)	{	String	newPathFileName	=	destDirStr	+	sep	+	entryName	;	File	newFile	=	new	File	(	newPathFileName	)	;	if	(	newFile	.	exists	(	)	)	{	plussQuotaSize	-=	newFile	.	length	(	)	;	newFile	.	delete	(	)	;	}	in	=	new	BufferedInputStream	(	new	FileInputStream	(	oldPathFileName	)	,	bufferSize	)	;	out	=	new	BufferedOutputStream	(	new	FileOutputStream	(	newPathFileName	)	,	bufferSize	)	;	int	readLen	;	while	(	(	readLen	=	in	.	read	(	dataBuff	)	)	>	0	)	{	out	.	write	(	dataBuff	,	0	,	readLen	)	;	plussQuotaSize	+=	readLen	;	}	out	.	flush	(	)	;	in	.	close	(	)	;	out	.	close	(	)	;	}	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_34.java,1,71,42,21,String	destDirStr	,	boolean	copyOutputsRtIDsDirs	)	throws	Exception	{	long	plussQuotaSize	=	0	;	if	(	baseDirStr	.	endsWith	(	sep	)	)	{	baseDirStr	=	baseDirStr	.	substring	(	0	,	baseDirStr	.	length	(	)	-	1	)	;	}	if	(	destDirStr	.	endsWith	(	sep	)	)	{	destDirStr	=	destDirStr	.	substring	(	0	,	destDirStr	.	length	(	)	-	1	)	;	}	FileUtils	.	getInstance	(	)	.	createDirectory	(	destDirStr	)	;	BufferedInputStream	in	=	null	;	BufferedOutputStream	out	=	null	;	byte	dataBuff	[	]	=	new	byte	[	bufferSize	]	;	File	baseDir	=	new	File	(	baseDirStr	)	;	baseDir	.	mkdirs	(	)	;	if	(	!	baseDir	.	exists	(	)	)	{	createDirectory	(	baseDirStr	)	;	}	if	(	(	baseDir	.	exists	(	)	)	&&	(	baseDir	.	isDirectory	(	)	)	)	{	String	[	]	entryList	=	baseDir	.	list	(	)	;	if	(	entryList	.	length	>	0	)	{	for	(	int	pos	=	0	;	pos	<	entryList	.	length	;	pos	++	)	{	String	entryName	=	entryList	[	pos	]	;	String	oldPathFileName	=	baseDirStr	+	sep	+	entryName	;	File	entryFile	=	new	File	(	oldPathFileName	)	;	if	(	entryFile	.	isFile	(	)	)	{	String	newPathFileName	=	destDirStr	+	sep	+	entryName	;	File	newFile	=	new	File	(	newPathFileName	)	;	if	(	newFile	.	exists	(	)	)	{	plussQuotaSize	-=	newFile	.	length	(	)	;	newFile	.	delete	(	)	;	}	in	=	new	BufferedInputStream	(	new	FileInputStream	(	oldPathFileName	)	,	bufferSize	)	;	out	=	new	BufferedOutputStream	(	new	FileOutputStream	(	newPathFileName	)	,	bufferSize	)	;	int	readLen	;	while	(	(	readLen	=	in	.	read	(	dataBuff	)	)	>	0	)	{	out	.	write	(	dataBuff	,	0	,	readLen	)	;	plussQuotaSize	+=	readLen	;	}	out	.	flush	(	)	;	in	.	close	(	)	;	out	.	close	(	)	;	}	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_34.java,1,4,3,12,public	long	copyDirAllFilesToDirectoryRecursive	(	String	baseDirStr	,	String	destDirStr	,	boolean	copyOutputsRtIDsDirs	)	throws	Exception	{	long	plussQuotaSize	=	0	;	if	(	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_35.java,1,4,3,12,public	long	copyFile	(	String	baseDirStr	,	String	fileName	,	String	file2FullPath	)	throws	Exception	{	long	plussQuotaSize	=	0	;	if	(	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_35.java,6,8,9,52,BufferedInputStream	in	=	null	;	BufferedOutputStream	out	=	null	;	byte	dataBuff	[	]	=	new	byte	[	bufferSize	]	;	String	file1FullPath	=	new	String	(	baseDirStr	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_36.java,18,8,21,47,BufferedInputStream	in	=	null	;	BufferedOutputStream	out	=	null	;	byte	dataBuff	[	]	=	new	byte	[	bufferSize	]	;	File	fileordir	=	new	File	(	file1FullPath	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_36.java,18,8,22,30,BufferedInputStream	in	=	null	;	BufferedOutputStream	out	=	null	;	byte	dataBuff	[	]	=	new	byte	[	bufferSize	]	;	File	fileordir	=	new	File	(	file1FullPath	)	;	if	(	fileordir	.	exists	(	)	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_37.java,2,8,6,26,BufferedInputStream	in	=	null	;	BufferedOutputStream	out	=	null	;	byte	dataBuff	[	]	=	new	byte	[	bufferSize	]	;	File	file1	=	new	File	(	sourcePath	)	;	if	(	file1	.	exists	(	)	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_37.java,16,46,20,24,)	;	}	out	.	flush	(	)	;	in	.	close	(	)	;	out	.	close	(	)	;	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_56.java,70,32,74,30,)	;	}	pstm3	.	close	(	)	;	rslt2	.	close	(	)	;	pstm2	.	close	(	)	;	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_38.java,1,12,3,32,InputStream	urlToInputStream	(	URL	url	)	throws	IOException	{	URLConnection	conn	=	url	.	openConnection	(	)	;	conn	.	setRequestProperty	(	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_784.java,1,14,3,31,RemoteInputStream	getUrlResource	(	URL	url	)	throws	IOException	{	URLConnection	conn	=	url	.	openConnection	(	)	;	conn	.	setConnectTimeout	(	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_39.java,13,20,14,68,String	alloc	=	buffer	.	allocate	(	is	)	;	InputStream	ins	=	buffer	.	getDataAsStream	(	alloc	)	;	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_40.java,18,8,19,69,Document	doc	=	builder	.	parse	(	configFile	)	;	NodeList	profileNodes	=	doc	.	getElementsByTagName	(	profileTag	)	;	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_40.java,43,16,45,23,profile	=	xslProfileClass	.	getClass	(	)	.	newInstance	(	)	;	profile	.	setId	(	id	)	;	profile	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_41.java,8,20,10,12,is	=	url	.	toURL	(	)	.	openStream	(	)	;	converter	.	convert	(	is	)	;	File	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_41.java,4,36,7,11,DecoratorSelection	(	)	;	XmlFileSystemRepository	rep	=	new	XmlFileSystemRepository	(	)	;	XmlToFormatContentConverter	converter	=	new	XmlToFormatContentConverter	(	rep	)	;	URI	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_68.java,134,19,137,13,newTransformer	(	)	;	StringWriter	sw	=	new	StringWriter	(	)	;	PrintWriter	pw	=	new	PrintWriter	(	sw	)	;	trans	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_42.java,2,39,4,81,;	OutputStream	output	=	new	FileOutputStream	(	target	)	;	InputStream	input	=	new	BufferedInputStream	(	new	FileInputStream	(	inputFile	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_51.java,4,88,6,75,;	URL	url	=	new	URL	(	uri	)	;	BufferedReader	input	=	new	BufferedReader	(	new	InputStreamReader	(	url	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_43.java,21,90,23,56,)	;	String	line	;	while	(	(	line	=	reader	.	readLine	(	)	)	!=	null	)	{	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_51.java,7,177,9,51,)	;	String	line	;	while	(	(	line	=	input	.	readLine	(	)	)	!=	null	)	{	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_44.java,5,25,9,15,;	try	{	url	=	new	URL	(	urlString	)	;	con	=	url	.	openConnection	(	)	;	int	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_342.java,5,47,9,14,;	try	{	url_	=	new	URL	(	url	)	;	uc	=	url_	.	openConnection	(	)	;	in	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_45.java,8,28,10,55,=	md	.	digest	(	)	;	StringBuffer	sb	=	new	StringBuffer	(	)	;	for	(	int	i	=	0	;	i	<	byteData	.	length	;	i	++	)	{	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_65.java,13,25,15,52,=	messageDigest	.	digest	(	)	;	StringBuffer	md5StrBuff	=	new	StringBuffer	(	)	;	for	(	int	i	=	0	;	i	<	byteArray	.	length	;	i	++	)	{	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_46.java,5,8,6,57,FileOutputStream	out	=	new	FileOutputStream	(	localCache	)	;	IOUtils	.	copy	(	typica	.	getContent	(	)	.	getInputStream	(	)	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_54.java,4,12,5,71,FileWriter	out	=	new	FileWriter	(	saveServiceProps	)	;	IOUtils	.	copy	(	Thread	.	currentThread	(	)	.	getContextClassLoader	(	)	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_47.java,4,12,6,18,MessageDigest	messagedigest	=	MessageDigest	.	getInstance	(	"MD5"	)	;	messagedigest	.	update	(	s	.	getBytes	(	)	,	0	,	s	.	length	(	)	)	;	return	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_110.java,3,12,5,18,MessageDigest	m	=	MessageDigest	.	getInstance	(	"MD5"	)	;	m	.	update	(	s	.	getBytes	(	)	,	0	,	s	.	length	(	)	)	;	return	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_48.java,14,43,17,25,)	)	;	return	getHashString	(	md	.	digest	(	)	)	;	}	catch	(	UnsupportedEncodingException	e	)	{	logger	.	error	(	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_49.java,4,33,7,30,)	)	;	return	toHexString	(	md	.	digest	(	)	)	;	}	catch	(	NoSuchAlgorithmException	e	)	{	e	.	printStackTrace	(	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_49.java,1,4,4,34,public	static	String	md5Encode	(	String	s	)	{	try	{	MessageDigest	md	=	MessageDigest	.	getInstance	(	"MD5"	)	;	md	.	update	(	s	.	getBytes	(	)	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_110.java,1,4,4,33,public	static	String	MD5	(	String	s	)	{	try	{	MessageDigest	m	=	MessageDigest	.	getInstance	(	"MD5"	)	;	m	.	update	(	s	.	getBytes	(	)	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_50.java,4,12,6,32,messageDigest	.	update	(	value	.	getBytes	(	"UTF-8"	)	)	;	}	catch	(	UnsupportedEncodingException	e	)	{	messageDigest	.	update	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_65.java,6,12,8,22,messageDigest	.	update	(	str	.	getBytes	(	"UTF-8"	)	)	;	}	catch	(	NoSuchAlgorithmException	e	)	{	System	.	out	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_51.java,7,169,9,51,CANON_EQ	)	;	String	line	;	while	(	(	line	=	input	.	readLine	(	)	)	!=	null	)	{	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_57.java,5,52,7,54,in	)	;	ZipEntry	e	;	while	(	(	e	=	zin	.	getNextEntry	(	)	)	!=	null	)	{	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_52.java,7,12,10,13,{	URL	url	=	new	URL	(	urlStrWithSlash	)	;	InputStream	f	=	url	.	openStream	(	)	;	f	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_75.java,1,118,4,19,{	URL	url	=	new	URL	(	refererURL	)	;	InputStream	is	=	url	.	openStream	(	)	;	mRefererURL	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_53.java,5,40,8,9,)	;	InputStreamReader	isr	=	new	InputStreamReader	(	is	)	;	BufferedReader	br	=	new	BufferedReader	(	isr	)	;	s	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_58.java,5,81,8,20,)	;	ZipInputStream	zin	=	new	ZipInputStream	(	in	)	;	ZipOutputStream	zout	=	new	ZipOutputStream	(	os	)	;	ZipEntry	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_54.java,5,117,8,31,,	out	)	;	out	.	flush	(	)	;	out	.	close	(	)	;	System	.	setProperty	(	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_55.java,17,28,20,25,,	expression	)	;	pstm	.	executeUpdate	(	)	;	pstm	.	close	(	)	;	cndef	.	commit	(	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_55.java,17,40,20,27,)	;	pstm	.	executeUpdate	(	)	;	pstm	.	close	(	)	;	cndef	.	commit	(	)	;	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_67.java,16,170,19,25,)	;	ftpInput	.	close	(	)	;	storeFileStream	.	close	(	)	;	ftp	.	logout	(	)	;	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_56.java,70,20,74,21,rslt3	.	close	(	)	;	}	pstm3	.	close	(	)	;	rslt2	.	close	(	)	;	pstm2	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_58.java,38,16,42,16,zout	.	closeEntry	(	)	;	}	zin	.	close	(	)	;	zout	.	close	(	)	;	File	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_57.java,4,12,6,22,InputStream	in	=	new	BufferedInputStream	(	new	FileInputStream	(	zipfile	)	)	;	ZipInputStream	zin	=	new	ZipInputStream	(	in	)	;	ZipEntry	e	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_58.java,5,12,7,32,OutputStream	os	=	new	BufferedOutputStream	(	new	FileOutputStream	(	temp	)	)	;	ZipInputStream	zin	=	new	ZipInputStream	(	in	)	;	ZipOutputStream	zout	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_58.java,5,81,7,59,)	;	ZipInputStream	zin	=	new	ZipInputStream	(	in	)	;	ZipOutputStream	zout	=	new	ZipOutputStream	(	os	)	;	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_75.java,18,43,20,52,)	;	InputStreamReader	isr	=	new	InputStreamReader	(	is	)	;	BufferedReader	br	=	new	BufferedReader	(	isr	)	;	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_59.java,11,12,13,31,localStream	=	new	FileOutputStream	(	new	File	(	localFilePath	)	)	;	}	catch	(	FileNotFoundException	e1	)	{	e1	.	printStackTrace	(	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_87.java,14,12,16,25,fis	=	new	BufferedInputStream	(	new	FileInputStream	(	filePath	)	)	;	}	catch	(	FileNotFoundException	e	)	{	logger	.	error	(	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_60.java,4,8,5,41,jndiProps	=	new	java	.	util	.	Properties	(	)	;	jndiProps	.	load	(	url	.	openStream	(	)	)	;	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_266.java,3,29,4,46,host0JndiProps	=	new	java	.	util	.	Properties	(	)	;	host0JndiProps	.	load	(	url	.	openStream	(	)	)	;	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_61.java,1,4,2,73,public	static	void	copyFile	(	File	in	,	File	out	)	throws	IOException	{	FileChannel	sourceChannel	=	new	FileInputStream	(	in	)	.	getChannel	(	)	;	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_69.java,1,4,2,73,public	static	void	copyFile	(	File	in	,	File	out	)	throws	IOException	{	FileChannel	sourceChannel	=	new	FileInputStream	(	in	)	.	getChannel	(	)	;	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_62.java,5,39,8,34,;	URLConnection	cn	=	url	.	openConnection	(	)	;	Utils	.	setHeader	(	cn	)	;	cn	.	setRequestProperty	(	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_68.java,93,50,96,35,;	Node	name_id_value	=	name_id_node	.	getFirstChild	(	)	;	randgen	.	nextBytes	(	rand_bytes	)	;	name_id_value	.	setNodeValue	(	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_63.java,11,65,12,54,;	e	.	hasMoreElements	(	)	;	)	{	String	key	=	(	String	)	e	.	nextElement	(	)	;	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_68.java,40,17,41,62,;	aliases	.	hasMoreElements	(	)	;	)	{	String	alias	=	(	String	)	aliases	.	nextElement	(	)	;	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_64.java,2,28,6,17,;	try	{	digest	=	MessageDigest	.	getInstance	(	"MD5"	)	;	}	catch	(	NoSuchAlgorithmException	ex	)	{	throw	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_435.java,3,56,7,17,;	try	{	messagedigest	=	MessageDigest	.	getInstance	(	"MD5"	)	;	}	catch	(	NoSuchAlgorithmException	nosuchalgorithmexception	)	{	throw	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_65.java,14,38,15,52,StringBuffer	(	)	;	for	(	int	i	=	0	;	i	<	byteArray	.	length	;	i	++	)	{	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_78.java,5,33,6,53,digest	(	)	;	for	(	int	i	=	0	;	i	<	digest	.	length	;	i	++	)	{	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_66.java,34,18,41,9,{	if	(	is	!=	null	)	{	is	.	close	(	)	;	}	if	(	connection	!=	null	)	{	connection	.	disconnect	(	)	;	}	}	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_154.java,26,20,33,17,{	if	(	in	!=	null	)	{	in	.	close	(	)	;	}	if	(	out	!=	null	)	{	out	.	close	(	)	;	}	}	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_67.java,7,58,9,28,getReplyString	(	)	)	;	ftp	.	login	(	ftpDetails	.	getUserName	(	)	,	ftpDetails	.	getPassword	(	)	)	;	ftp	.	setFileType	(	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_92.java,11,19,13,33,getHostName	(	)	)	;	cl	.	login	(	auth	.	getUser	(	)	,	auth	.	getPassword	(	)	)	;	cl	.	enterLocalPassiveMode	(	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_68.java,134,18,137,13,.	newTransformer	(	)	;	StringWriter	sw	=	new	StringWriter	(	)	;	PrintWriter	pw	=	new	PrintWriter	(	sw	)	;	trans	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_75.java,17,10,20,22,.	getParser	(	)	;	StringBuffer	sb	=	new	StringBuffer	(	)	;	InputStreamReader	isr	=	new	InputStreamReader	(	is	)	;	BufferedReader	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_69.java,1,4,2,73,public	static	void	copyFile	(	File	in	,	File	out	)	throws	IOException	{	FileChannel	sourceChannel	=	new	FileInputStream	(	in	)	.	getChannel	(	)	;	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_157.java,1,4,2,81,public	static	void	copy	(	String	sourceFile	,	String	targetFile	)	throws	IOException	{	FileChannel	sourceChannel	=	new	FileInputStream	(	sourceFile	)	.	getChannel	(	)	;	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_70.java,6,23,8,46,FidoDataSource	.	getConnection	(	)	;	conn	.	setAutoCommit	(	false	)	;	stmt	=	conn	.	createStatement	(	)	;	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_71.java,7,33,9,46,FidoDataSource	.	getConnection	(	)	;	conn	.	setAutoCommit	(	false	)	;	stmt	=	conn	.	createStatement	(	)	;	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_71.java,1,4,6,22,public	void	delete	(	String	language	,	String	tag	,	int	row	)	throws	FidoDatabaseException	{	try	{	Connection	conn	=	null	;	Statement	stmt	=	null	;	try	{	String	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_72.java,1,4,6,20,public	void	moveRuleUp	(	String	language	,	String	tag	,	int	row	)	throws	FidoDatabaseException	{	try	{	Connection	conn	=	null	;	Statement	stmt	=	null	;	try	{	conn	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_72.java,1,4,10,26,public	void	moveRuleUp	(	String	language	,	String	tag	,	int	row	)	throws	FidoDatabaseException	{	try	{	Connection	conn	=	null	;	Statement	stmt	=	null	;	try	{	conn	=	fido	.	util	.	FidoDataSource	.	getConnection	(	)	;	conn	.	setAutoCommit	(	false	)	;	stmt	=	conn	.	createStatement	(	)	;	int	max	=	findMaxRank	(	stmt	,	language	,	tag	)	;	if	(	(	row	<	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_73.java,1,4,10,26,public	void	moveRuleDown	(	String	language	,	String	tag	,	int	row	)	throws	FidoDatabaseException	{	try	{	Connection	conn	=	null	;	Statement	stmt	=	null	;	try	{	conn	=	fido	.	util	.	FidoDataSource	.	getConnection	(	)	;	conn	.	setAutoCommit	(	false	)	;	stmt	=	conn	.	createStatement	(	)	;	int	max	=	findMaxRank	(	stmt	,	language	,	tag	)	;	if	(	(	row	<	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_73.java,17,16,22,9,throw	e	;	}	finally	{	if	(	stmt	!=	null	)	stmt	.	close	(	)	;	if	(	conn	!=	null	)	conn	.	close	(	)	;	}	}	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_183.java,7,12,12,5,throw	e	;	}	finally	{	if	(	inputChannel	!=	null	)	inputChannel	.	close	(	)	;	if	(	outputChannel	!=	null	)	outputChannel	.	close	(	)	;	}	}	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_74.java,4,16,5,54,final	Site	site	=	entry	.	getKey	(	)	;	final	Item	oldItem	=	entry	.	getValue	(	)	;	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_101.java,35,6,36,57,final	FileChannel	inChannel	=	in0	.	getChannel	(	)	;	final	long	inSize	=	inChannel	.	size	(	)	;	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_75.java,18,43,20,52,)	;	InputStreamReader	isr	=	new	InputStreamReader	(	is	)	;	BufferedReader	br	=	new	BufferedReader	(	isr	)	;	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_77.java,8,53,10,57,)	;	InputStream	fileStream	=	new	FileInputStream	(	file	)	;	OutputStream	bos	=	new	FileOutputStream	(	tmpFile	)	;	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_76.java,3,54,7,9,)	.	getChannel	(	)	;	in	.	transferTo	(	0	,	s	.	length	(	)	,	out	)	;	in	.	close	(	)	;	out	.	close	(	)	;	}	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_190.java,4,89,8,9,)	.	getChannel	(	)	;	sourceChannel	.	transferTo	(	0	,	sourceChannel	.	size	(	)	,	destinationChannel	)	;	sourceChannel	.	close	(	)	;	destinationChannel	.	close	(	)	;	}	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_77.java,11,8,13,27,IOUtils	.	copy	(	fileStream	,	bos	)	;	bos	.	close	(	)	;	fileStream	.	close	(	)	;	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_84.java,25,16,27,32,IOUtils	.	copy	(	tmpIs	,	tmpBaos	)	;	tmpIs	.	close	(	)	;	tmpBaos	.	close	(	)	;	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_78.java,5,33,7,26,digest	(	)	;	for	(	int	i	=	0	;	i	<	digest	.	length	;	i	++	)	{	System	.	err	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_107.java,8,41,10,32,StringBuffer	(	)	;	for	(	int	i	=	0	;	i	<	result	.	length	;	i	++	)	{	hexString	.	append	
+<pair>
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_79.java,5,40,9,9,]	;	md	.	update	(	text	.	getBytes	(	"iso-8859-1"	)	,	0	,	text	.	length	(	)	)	;	md5hash	=	md	.	digest	(	)	;	return	convertToHex	(	md5hash	)	;	}	
+/Users/mataonbas/IdeaProjects/SimpleCC/trialDataset/file_120.java,4,37,8,5,]	;	md	.	update	(	text	.	getBytes	(	"iso-8859-1"	)	,	0	,	text	.	length	(	)	)	;	sha1hash	=	md	.	digest	(	)	;	return	convertToHex	(	sha1hash	)	;	}	
+<pair>
+/Users/mataonbas/IdeaProjects/Simpl
