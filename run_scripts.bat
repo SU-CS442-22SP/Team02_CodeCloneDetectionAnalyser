@@ -45,10 +45,15 @@ if "%choice%"=="1" (
 
 ) else if "%choice%"=="2" (
     :: Run SimpleCC
-    java -cp "%ANTLR4_PATH%;%PROJECT_PATH%%TOOL_2_NAME%simplecc.jar" jp.naist.se.simplecc.CloneDetectionMain "%PROJECT_PATH%%TOOL_2_NAME%src"
+    java -cp "%ANTLR4_PATH%;%PROJECT_PATH%%TOOL_2_NAME%simplecc.jar" jp.naist.se.simplecc.CloneDetectionMain "%PROJECT_PATH%%DATA_SET_NAME%"
+    
 ) else if "%choice%"=="3" (
     :: Compile and run myCC
-    exit
+    set FILE1=%PROJECT_PATH%%TOOL_3_NAME%\dataset\file1.java
+    set FILE2=%PROJECT_PATH%%TOOL_3_NAME%\dataset\file2.java
+
+    java -jar "%PROJECT_PATH%%TOOL_3_NAME%target\Type2CodeCloneDetection-1.0-SNAPSHOT.jar" "%FILE1%" "%FILE2%"
+    
 ) else if "%choice%"=="4" (
     :: Exit the program
     exit
@@ -57,5 +62,10 @@ if "%choice%"=="1" (
     set /p "IGNORE_THRESHOLD=Please provide the ignore threshold for Duplicate Code Detection: "
 
     python -W ignore "%PROJECT_PATH%%TOOL_1_NAME%duplicate_code_detection.py" --ignore-threshold 50 --csv-output results.csv -d "%PROJECT_PATH%%DATA_SET_NAME%"
-    java -cp "%ANTLR4_PATH%;%PROJECT_PATH%%TOOL_2_NAME%simplecc.jar" jp.naist.se.simplecc.CloneDetectionMain "%PROJECT_PATH%%TOOL_2_NAME%src"
+    java -cp "%ANTLR4_PATH%;%PROJECT_PATH%%TOOL_2_NAME%simplecc.jar" jp.naist.se.simplecc.CloneDetectionMain "%PROJECT_PATH%%DATA_SET_NAME%"
+
+    set FILE1=%PROJECT_PATH%%TOOL_3_NAME%\dataset\file1.java
+    set FILE2=%PROJECT_PATH%%TOOL_3_NAME%\dataset\file2.java
+
+    java -jar "%PROJECT_PATH%%TOOL_3_NAME%target\Type2CodeCloneDetection-1.0-SNAPSHOT.jar" "%FILE1%" "%FILE2%"
 )
