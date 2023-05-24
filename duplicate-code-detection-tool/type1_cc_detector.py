@@ -65,4 +65,4 @@ def get_details_2files(f1, f2):
 
             if similarity == 1:  # adjust this threshold as needed
                 print(
-                    f"<pair>\n{f1},{index1+1},{line1.strip()}\n{f2},{index2+1},{line2.strip()}\n<pair>")
+                    f"<pair>\n{f1},{index1+1},{line1.strip()}\n{f2},{index2+1},line_{line2.strip()}\n<pair>")
