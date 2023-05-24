@@ -1,5 +1,6 @@
 {
 
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "workbench.colorTheme": "Material Theme Palenight High Contrast"
 
 }

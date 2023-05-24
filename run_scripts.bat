@@ -37,8 +37,11 @@ set /p "choice=Choice: "
 
 :: Check the user's input
 if "%choice%"=="1" (
+
+     set /p "IGNORE_THRESHOLD=Please provide the ignore threshold for Duplicate Code Detection: "
     :: Run duplicate code detector
-    python -W ignore "%PROJECT_PATH%%TOOL_1_NAME%duplicate_code_detection.py" -d "%PROJECT_PATH%%DATA_SET_NAME%"
+    python -W ignore "%PROJECT_PATH%%TOOL_1_NAME%duplicate_code_detection.py" --ignore-threshold 50 -d "%PROJECT_PATH%%DATA_SET_NAME%"
+
 ) else if "%choice%"=="2" (
     :: Run SimpleCC
     java -cp "%ANTLR4_PATH%;%PROJECT_PATH%%TOOL_2_NAME%simplecc.jar" jp.naist.se.simplecc.CloneDetectionMain "%PROJECT_PATH%%TOOL_2_NAME%src"
@@ -50,6 +53,8 @@ if "%choice%"=="1" (
     exit
 ) else (
     :: Run duplicate code detector && SimpleCC
-    python -W ignore "%PROJECT_PATH%%TOOL_1_NAME%duplicate_code_detection.py" -d "%PROJECT_PATH%%DATA_SET_NAME%"
+    set /p "IGNORE_THRESHOLD=Please provide the ignore threshold for Duplicate Code Detection: "
+
+      python -W ignore "%PROJECT_PATH%%TOOL_1_NAME%duplicate_code_detection.py" --ignore-threshold 50 -d "%PROJECT_PATH%%DATA_SET_NAME%"
     java -cp "%ANTLR4_PATH%;%PROJECT_PATH%%TOOL_2_NAME%simplecc.jar" jp.naist.se.simplecc.CloneDetectionMain "%PROJECT_PATH%%TOOL_2_NAME%src"
 )
