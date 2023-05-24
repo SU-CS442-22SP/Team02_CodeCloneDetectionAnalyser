@@ -1,5 +1,4 @@
 {
-
-    "java.configuration.updateBuildConfiguration": "interactive"
-
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "workbench.colorTheme": "Sublime Monokai"
 }
