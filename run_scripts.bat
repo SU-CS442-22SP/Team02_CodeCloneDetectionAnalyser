@@ -1,4 +1,5 @@
 @echo off
+setlocal enabledelayedexpansion
 :: This script will run CodeCloneDetectionAnalyser
 
 :: Set the base path and dependencies
@@ -36,36 +37,33 @@ echo.
 set /p "choice=Choice: "
 
 :: Check the user's input
-if "%choice%"=="1" (
+if "!choice!"=="1" (
+    set /p IGNORE_THRESHOLD="Please provide the ignore threshold for Duplicate Code Detection: "
+    python -W ignore "%PROJECT_PATH%%TOOL_1_NAME%duplicate_code_detection.py" --ignore-threshold !IGNORE_THRESHOLD! --csv-output type1_cc_similarity_results.csv -d "%PROJECT_PATH%%DATA_SET_NAME%"
 
-    set /p "IGNORE_THRESHOLD2=Please provide the ignore threshold for Duplicate Code Detection: "
-    set IGNORE_THRESHOLD=20
-
-    python -W ignore "%PROJECT_PATH%%TOOL_1_NAME%duplicate_code_detection.py" --ignore-threshold 50 --csv-output type1_cc_similarity_results.csv -d "%PROJECT_PATH%%DATA_SET_NAME%"
-
-) else if "%choice%"=="2" (
+) else if "!choice!"=="2" (
     :: Run SimpleCC
     java -cp "%ANTLR4_PATH%;%PROJECT_PATH%%TOOL_2_NAME%simplecc.jar" jp.naist.se.simplecc.CloneDetectionMain "%PROJECT_PATH%%DATA_SET_NAME%"
     
-) else if "%choice%"=="3" (
+) else if "!choice!"=="3" (
     :: Compile and run myCC
     set FILE1=%PROJECT_PATH%%TOOL_3_NAME%\dataset\file1.java
     set FILE2=%PROJECT_PATH%%TOOL_3_NAME%\dataset\file2.java
 
-    java -jar "%PROJECT_PATH%%TOOL_3_NAME%target\Type2CodeCloneDetection-1.0-SNAPSHOT.jar" "%FILE1%" "%FILE2%"
+    java -jar "%PROJECT_PATH%%TOOL_3_NAME%target\Type2CodeCloneDetection-1.0-SNAPSHOT.jar" "!FILE1!" "!FILE2!"
     
-) else if "%choice%"=="4" (
+) else if "!choice!"=="4" (
     :: Exit the program
     exit
 ) else (
-    :: Run duplicate code detector && SimpleCC
-    set /p "IGNORE_THRESHOLD=Please provide the ignore threshold for Duplicate Code Detection: "
+    :: Run duplicate code detector 
+    set /p IGNORE_THRESHOLD="Please provide the ignore threshold for Duplicate Code Detection: "
+    python -W ignore "%PROJECT_PATH%%TOOL_1_NAME%duplicate_code_detection.py" --ignore-threshold !IGNORE_THRESHOLD! --csv-output type1_cc_similarity_results.csv -d "%PROJECT_PATH%%DATA_SET_NAME%"
 
-    python -W ignore "%PROJECT_PATH%%TOOL_1_NAME%duplicate_code_detection.py" --ignore-threshold 50 --csv-output results.csv -d "%PROJECT_PATH%%DATA_SET_NAME%"
     java -cp "%ANTLR4_PATH%;%PROJECT_PATH%%TOOL_2_NAME%simplecc.jar" jp.naist.se.simplecc.CloneDetectionMain "%PROJECT_PATH%%DATA_SET_NAME%"
 
     set FILE1=%PROJECT_PATH%%TOOL_3_NAME%\dataset\file1.java
     set FILE2=%PROJECT_PATH%%TOOL_3_NAME%\dataset\file2.java
 
-    java -jar "%PROJECT_PATH%%TOOL_3_NAME%target\Type2CodeCloneDetection-1.0-SNAPSHOT.jar" "%FILE1%" "%FILE2%"
+    java -jar "%PROJECT_PATH%%TOOL_3_NAME%target\Type2CodeCloneDetection-1.0-SNAPSHOT.jar" "!FILE1!" "!FILE2!"
 )
