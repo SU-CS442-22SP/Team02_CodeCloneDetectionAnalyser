@@ -333,7 +333,7 @@ def run(
                 + CliColors.ENDC,
                 json_output,
             )
-            get_details_2files(file1_, file2_)
+            get_details_2files(file1_, file2_, similarity_percentage)
         # If no similarities found for the particular file, remove it from the report
         if len(code_similarity[short_source_file_path]) == 0:
             del code_similarity[short_source_file_path]
