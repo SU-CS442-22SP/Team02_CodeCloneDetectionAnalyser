@@ -65,7 +65,7 @@ def get_details_2files(f1, f2, total_result):
     base_name_f2 = os.path.basename(f2)
 
     # Prepare the directory and file name
-    results_dir = "../Type1_CC_Results"
+    results_dir = "./Type1_CC_Results"
     if not os.path.exists(results_dir):
         os.makedirs(results_dir)
     result_file_name = f"{results_dir}/{base_name_f1}-{base_name_f2}_results.txt"
