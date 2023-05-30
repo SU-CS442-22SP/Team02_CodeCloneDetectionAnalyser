@@ -30,20 +30,23 @@ echo.
 echo * Press 1 for Duplicate Code Detection - Type1 CC detection
 echo * Press 2 for SimpleCC - Type2 CC detection
 echo * Press 3 for myCC - Type2 CC detection
-echo * Press 4 to exit
-echo * Press any other key for all of them 
+echo * Press 4 to run all the tools
+echo * Press any other key to exit 
 echo.
 
 set /p "choice=Choice: "
 
 :: Check the user's input
+
+:: Run duplicate code detector 
 if "!choice!"=="1" (
     set /p IGNORE_THRESHOLD="Please provide the ignore threshold for Duplicate Code Detection: "
-    python -W ignore "%PROJECT_PATH%%TOOL_1_NAME%duplicate_code_detection.py" --ignore-threshold !IGNORE_THRESHOLD! --csv-output Type1_CC_Percentage.csv -d "%PROJECT_PATH%%DATA_SET_NAME%"
+    python -W ignore "%PROJECT_PATH%%TOOL_1_NAME%duplicate_code_detection.py" --ignore-threshold !IGNORE_THRESHOLD! --csv-output Type1_CC_Percentage.txt -d "%PROJECT_PATH%%DATA_SET_NAME%"
 
 ) else if "!choice!"=="2" (
     :: Run SimpleCC
-    java -cp "%ANTLR4_PATH%;%PROJECT_PATH%%TOOL_2_NAME%simplecc.jar" jp.naist.se.simplecc.CloneDetectionMain "%PROJECT_PATH%%DATA_SET_NAME%"
+    java -cp "%ANTLR4_PATH%;%PROJECT_PATH%%TOOL_2_NAME%simplecc.jar" jp.naist.se.simplecc.CloneDetectionMain "%PROJECT_PATH%%DATA_SET_NAME%" > Type2_SimpleCC_All_Pairs.txt
+    python framework_util.py 1
     
 ) else if "!choice!"=="3" (
     :: Compile and run myCC
@@ -53,17 +56,17 @@ if "!choice!"=="1" (
     java -jar "%PROJECT_PATH%%TOOL_3_NAME%target\Type2CodeCloneDetection-1.0-SNAPSHOT.jar" "!FILE1!" "!FILE2!"
     
 ) else if "!choice!"=="4" (
-    :: Exit the program
-    exit
-) else (
     :: Run duplicate code detector 
     set /p IGNORE_THRESHOLD="Please provide the ignore threshold for Duplicate Code Detection: "
-    python -W ignore "%PROJECT_PATH%%TOOL_1_NAME%duplicate_code_detection.py" --ignore-threshold !IGNORE_THRESHOLD! --csv-output TYPE1_CC_PERCENTAGE.csv -d "%PROJECT_PATH%%DATA_SET_NAME%"
+    python -W ignore "%PROJECT_PATH%%TOOL_1_NAME%duplicate_code_detection.py" --ignore-threshold !IGNORE_THRESHOLD! --csv-output Type1_CC_Percentage.txt -d "%PROJECT_PATH%%DATA_SET_NAME%"
 
-    java -cp "%ANTLR4_PATH%;%PROJECT_PATH%%TOOL_2_NAME%simplecc.jar" jp.naist.se.simplecc.CloneDetectionMain "%PROJECT_PATH%%DATA_SET_NAME%"
+    java -cp "%ANTLR4_PATH%;%PROJECT_PATH%%TOOL_2_NAME%simplecc.jar" jp.naist.se.simplecc.CloneDetectionMain "%PROJECT_PATH%%DATA_SET_NAME%" > Type2_SimpleCC_All_Pairs.txt
+    python framework_util.py
 
     set FILE1=%PROJECT_PATH%%TOOL_3_NAME%\dataset\file1.java
     set FILE2=%PROJECT_PATH%%TOOL_3_NAME%\dataset\file2.java
 
     java -jar "%PROJECT_PATH%%TOOL_3_NAME%target\Type2CodeCloneDetection-1.0-SNAPSHOT.jar" "!FILE1!" "!FILE2!"
+) else (
+    exit
 )
