@@ -27,10 +27,10 @@ if not defined DATA_SET_NAME (
 
 :: Prompt the user for input
 echo.
-echo * Press 1 for Duplicate Code Detection - Type1 CC detection
-echo * Press 2 for SimpleCC - Type2 CC detection
-echo * Press 3 for myCC - Type2 CC detection
-echo * Press 4 to run all the tools
+echo * Press 1 for Type1 CC detection: Duplicate Code Detection
+echo * Press 2 for Type2 CC detection: SimpleCC
+echo * Press 3 for Type2 CC detection: myCC
+echo * Press 4 to run all the CC detection tools
 echo * Press any other key to exit 
 echo.
 
@@ -45,15 +45,13 @@ if "!choice!"=="1" (
 ) else if "!choice!"=="2" (
     :: Run SimpleCC Type2
     java -cp "%ANTLR4_PATH%;%PROJECT_PATH%%TOOL_2_NAME%simplecc.jar" jp.naist.se.simplecc.CloneDetectionMain "%PROJECT_PATH%%DATA_SET_NAME%" > Type2_SimpleCC_All_Pairs.txt
-    python framework_util.py 1
+    python framework_util.py simpleCC
     
 ) else if "!choice!"=="3" (
     :: Run myCC Type2
-    set FILE1=%PROJECT_PATH%%TOOL_3_NAME%\dataset\file1.java
-    set FILE2=%PROJECT_PATH%%TOOL_3_NAME%\dataset\file2.java
+    java -jar "%PROJECT_PATH%%TOOL_3_NAME%target\myCC.jar" "%PROJECT_PATH%%DATA_SET_NAME%" > Type2_myCC_All_Pairs.txt
+    python framework_util.py myCC
 
-    java -jar "%PROJECT_PATH%%TOOL_3_NAME%target\Type2CodeCloneDetection-1.0-SNAPSHOT.jar" "!FILE1!" "!FILE2!"
-    
 ) else if "!choice!"=="4" (
     :: Duplicate code detector Type1
     set /p IGNORE_THRESHOLD="Please provide the ignore threshold for Duplicate Code Detection: "
@@ -61,8 +59,12 @@ if "!choice!"=="1" (
 
     :: SimpleCC Type2
     java -cp "%ANTLR4_PATH%;%PROJECT_PATH%%TOOL_2_NAME%simplecc.jar" jp.naist.se.simplecc.CloneDetectionMain "%PROJECT_PATH%%DATA_SET_NAME%" > Type2_SimpleCC_All_Pairs.txt
-    python framework_util.py 1
-    python framework_util.py 2
+    python framework_util.py simpleCC
+
+    :: myCC Type2
+    java -jar "%PROJECT_PATH%%TOOL_3_NAME%target\myCC.jar" "%PROJECT_PATH%%DATA_SET_NAME%" > Type2_myCC_All_Pairs.txt
+    python framework_util.py myCC
+    python framework_util.py all
 
 ) else (
     exit

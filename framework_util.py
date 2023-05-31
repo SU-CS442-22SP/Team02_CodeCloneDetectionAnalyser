@@ -1,20 +1,39 @@
 import os
 import argparse
+import shutil
 
 
-def simpleCC_output_generator():
+def CC_output_generator(operation_type):
     file_content = {}
-    with open('Type2_SimpleCC_All_Pairs.txt', 'r') as file:
-        data = file.read().split('</pair>')
+    input_file = ''
+    output_directory = ''
+    suffix = ''
+    title = ''
+
+    if operation_type == 'simpleCC':
+        input_file = 'Type2_SimpleCC_All_Pairs.txt'
+        output_directory = 'Type2_SimpleCC_Results'
+        suffix = '_simpleCC_results.txt'
+        title = 'SimpleCC Results for the files: '
+    elif operation_type == 'myCC':
+        input_file = 'Type2_myCC_All_Pairs.txt'
+        output_directory = 'Type2_myCC_Results'
+        suffix = '_myCC_results.txt'
+        title = 'myCC Results for the files: '
+    else:
+        print("Invalid operation type. Choose either 'simpleCC' or 'myCC'.")
+        return
+
+    with open(input_file, 'r') as file:
+        data = file.read().split('<pair>')
 
         for pair in data:
-            pair = pair.strip().replace('<pair>\n', '')
+            pair = pair.strip().replace('</pair>', '')
             lines = pair.split('\n')
 
-            if len(lines) < 2:
+            if len(lines) < 2 or (operation_type == 'myCC' and ("Comparing file" in lines[0] or "Comparing file" in lines[1])):
                 continue
 
-            # Split file name from content
             file1_name = lines[0].split(',')[0].split('\\')[-1]
             file1_content = '<pair>\n' + lines[0]
 
@@ -24,27 +43,21 @@ def simpleCC_output_generator():
             if file2_name == file1_name:
                 continue
 
-            # Generate file name as 'file_num1-file_num2_simpleCC_results.txt' ensuring consistent order
-            file_name = '-'.join(sorted([file1_name, file2_name])
-                                 ) + '_simpleCC_results.txt'
+            file_name = '-'.join(sorted([file1_name, file2_name])) + suffix
 
-            # If file already exists in the dictionary, append the new content. Otherwise, create a new entry
             if file_name in file_content:
                 file_content[file_name].append(file1_content)
                 file_content[file_name].append(file2_content)
             else:
                 file_content[file_name] = [file1_content, file2_content]
 
-    # Create new directory if not exists
-    if not os.path.exists('Type2_SimpleCC_Results'):
-        os.makedirs('Type2_SimpleCC_Results')
+    if not os.path.exists(output_directory):
+        os.makedirs(output_directory)
 
-    # Write the data to respective files
     for file_name, contents in file_content.items():
-        with open(os.path.join('Type2_SimpleCC_Results', file_name), 'w') as f:
-            # Write the file title as the first line, remove "_simpleCC_results" from the header
-            f.write('SimpleCC Results for the files: ' +
-                    file_name.replace('_simpleCC_results.txt', '').replace('-', ' - ') + '\n\n')
+        with open(os.path.join(output_directory, file_name), 'w') as f:
+            f.write(title + file_name.replace(suffix,
+                    '').replace('-', ' - ') + '\n\n')
             for content in contents:
                 f.write(content + '\n')
 
@@ -53,47 +66,57 @@ def overall_cc_output_generator():
     # Directories to merge files from
     dir1 = 'Type1_CC_Results'
     dir2 = 'Type2_SimpleCC_Results'
+    dir3 = 'Type2_myCC_Results'
 
     # Check if directories exist
-    if not os.path.exists(dir1) or not os.path.exists(dir2):
-        print(f"Both directories '{dir1}' and '{dir2}' must exist.")
+    if not os.path.exists(dir1) or not os.path.exists(dir2) or not os.path.exists(dir3):
+        print(f"Directories '{dir1}', '{dir2}' and '{dir3}' must exist.")
         return
-
-    # Get file names from both directories
-    dir1_files = os.listdir(dir1)
-    dir2_files = os.listdir(dir2)
-
-    # Transform file names for matching
-    dir1_files_transformed = {
-        f.replace('_results.txt', ''): f for f in dir1_files}
-    dir2_files_transformed = {
-        f.replace('_simpleCC_results.txt', ''): f for f in dir2_files}
 
     # Create output directory if it doesn't exist
     out_dir = 'Total_CC_Result'
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
 
-    # For each file in dir2, check if it exists in dir1 and merge them
-    for file_transformed, file_original in dir2_files_transformed.items():
-        if file_transformed in dir1_files_transformed:
-            # Open the output file in write mode
-            with open(os.path.join(out_dir, file_transformed + '_total_cc_result.txt'), 'w') as outfile:
-                # Write contents of file from dir1
-                with open(os.path.join(dir1, dir1_files_transformed[file_transformed]), 'r') as infile:
-                    outfile.write(infile.read())
+    # Transform filenames to a common format for matching
+    dir1_files = [filename.replace('_results.txt', '')
+                  for filename in os.listdir(dir1)]
+    dir2_files = [filename.replace('_simpleCC_results.txt', '')
+                  for filename in os.listdir(dir2)]
+    dir3_files = [filename.replace('_myCC_results.txt', '')
+                  for filename in os.listdir(dir3)]
 
+    # Concatenate all the filenames
+    all_files = set(dir1_files + dir2_files + dir3_files)
+
+    for file in all_files:
+        output_filename = os.path.join(out_dir, file + '_total_cc_result.txt')
+
+        if file in dir1_files:
+            with open(os.path.join(dir1, file + '_results.txt'), 'r') as infile:
+                content = infile.read()
+            with open(output_filename, 'w') as outfile:  # 'w' stands for 'write'
+                outfile.write(content)
+
+        if file in dir2_files:
+            with open(os.path.join(dir2, file + '_simpleCC_results.txt'), 'r') as infile:
+                content = infile.read()
+            with open(output_filename, 'a') as outfile:  # 'a' stands for 'append'
                 outfile.write('\n' + '-'*200 + '\n')
+                outfile.write(content)
 
-                # Write contents of file from dir2
-                with open(os.path.join(dir2, file_original), 'r') as infile:
-                    outfile.write(infile.read())
+        if file in dir3_files:
+            with open(os.path.join(dir3, file + '_myCC_results.txt'), 'r') as infile:
+                content = infile.read()
+            with open(output_filename, 'a') as outfile:  # 'a' stands for 'append'
+                outfile.write('\n' + '-'*200 + '\n')
+                outfile.write(content)
 
 
 def main(arg):
-    if (arg == 1):
-        simpleCC_output_generator()
-    elif arg == 2:
+    if arg == "simpleCC" or arg == "myCC":
+        CC_output_generator(arg)
+    elif arg == "all":
         overall_cc_output_generator()
     else:
         print("Invalid argument value")
@@ -101,6 +124,6 @@ def main(arg):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("arg", type=int, help="The argument value")
+    parser.add_argument("arg", type=str, help="The argument value")
     args = parser.parse_args()
     main(args.arg)
