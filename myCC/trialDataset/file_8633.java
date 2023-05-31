@@ -1,0 +1,16 @@
+    private String getCurrentUniprotAccession(String accession) throws Exception {
+        URL url = new URL(String.format(UNIPROT_underscoreENTRY_underscoreQUERY_underscoreSTRING, accession));
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+        HttpURLConnection.setFollowRedirects(true);
+        connection.setRequestMethod("HEAD");
+        connection.connect();
+        if (connection.getResponseCode() != 200) {
+            logger.debug("{} seems to be no UniProt accession", accession);
+            throw new Exception("Missing UniProt entry for " + accession);
+        }
+        String effectiveUrl = connection.getURL().toString();
+        String confirmedAccession = effectiveUrl.substring(effectiveUrl.lastIndexOf('/') + 1);
+        logger.debug("getCurrentUniprotAccession: {} -> {}", new Object[] { accession, confirmedAccession });
+        return confirmedAccession;
+    }
+

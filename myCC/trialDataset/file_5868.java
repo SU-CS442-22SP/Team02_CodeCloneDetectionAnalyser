@@ -1,0 +1,38 @@
+    public void insertJobLog(String userId, String[] checkId, String checkType, String objType) throws Exception {
+        DBOperation dbo = null;
+        Connection connection = null;
+        PreparedStatement preStm = null;
+        String sql = "insert into COFFICE_underscoreJOBLOG_underscoreCHECKAUTH (USER_underscoreID,CHECK_underscoreID,CHECK_underscoreTYPE,OBJ_underscoreTYPE) values (?,?,?,?)";
+        String cleanSql = "delete from COFFICE_underscoreJOBLOG_underscoreCHECKAUTH where " + "user_underscoreid = '" + userId + "' and check_underscoretype = '" + checkType + "' and obj_underscoretype = '" + objType + "'";
+        try {
+            dbo = createDBOperation();
+            connection = dbo.getConnection();
+            connection.setAutoCommit(false);
+            preStm = connection.prepareStatement(cleanSql);
+            int dCount = preStm.executeUpdate();
+            preStm = connection.prepareStatement(sql);
+            String sHaveIns = ",";
+            for (int j = 0; j < checkId.length; j++) {
+                if (sHaveIns.indexOf("," + checkId[j] + ",") < 0) {
+                    preStm.setInt(1, Integer.parseInt(userId));
+                    preStm.setInt(2, Integer.parseInt(checkId[j]));
+                    preStm.setInt(3, Integer.parseInt(checkType));
+                    preStm.setInt(4, Integer.parseInt(objType));
+                    preStm.executeUpdate();
+                    sHaveIns += checkId[j] + ",";
+                }
+            }
+            connection.commit();
+        } catch (Exception ex) {
+            log.debug((new Date().toString()) + " ������Ȩ��ʧ��! ");
+            try {
+                connection.rollback();
+            } catch (SQLException e) {
+                throw e;
+            }
+            throw ex;
+        } finally {
+            close(null, null, preStm, connection, dbo);
+        }
+    }
+

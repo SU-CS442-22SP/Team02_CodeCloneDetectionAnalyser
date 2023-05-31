@@ -1,0 +1,23 @@
+    private boolean serverOK(String serverAddress, String serverPort) {
+        boolean status = false;
+        String serverString = serverAddress + ":" + serverPort + MolConvertInNodeModel.SERVER_underscoreWSDL_underscorePATH;
+        System.out.println("connecting to " + serverString + "...");
+        try {
+            java.net.URL url = new java.net.URL(serverString);
+            try {
+                java.net.HttpURLConnection connection = (java.net.HttpURLConnection) url.openConnection();
+                status = readContents(connection);
+                if (status) {
+                    JOptionPane.showMessageDialog(this.getPanel(), "Connection to Server is OK");
+                }
+            } catch (Exception connEx) {
+                JOptionPane.showMessageDialog(this.getPanel(), connEx.getMessage());
+                logger.error(connEx.getMessage());
+            }
+        } catch (java.net.MalformedURLException urlEx) {
+            JOptionPane.showMessageDialog(this.getPanel(), urlEx.getMessage());
+            logger.error(urlEx.getMessage());
+        }
+        return status;
+    }
+
