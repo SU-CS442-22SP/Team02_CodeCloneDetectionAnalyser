@@ -1,0 +1,12 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_43.java - file_8.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_8.java,24,70,29,41,)	;	}	finally	{	if	(	fos	!=	null	)	{	try	{	fos	.	close	(	)	;	}	catch	(	IOException	e	)	{	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_43.java,25,43,30,47,)	;	}	finally	{	if	(	output	!=	null	)	{	try	{	output	.	close	(	)	;	}	catch	(	IOException	ignored	)	{	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_8.java,26,12,29,41,if	(	fos	!=	null	)	{	try	{	fos	.	close	(	)	;	}	catch	(	IOException	e	)	{	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_43.java,33,12,36,47,if	(	reader	!=	null	)	{	try	{	reader	.	close	(	)	;	}	catch	(	IOException	ignored	)	{	
+</pair>

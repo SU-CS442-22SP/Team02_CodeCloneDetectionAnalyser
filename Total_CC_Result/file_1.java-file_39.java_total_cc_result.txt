@@ -1,0 +1,8 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_1.java - file_39.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_39.java,39,74,41,27,.	getStandardIOResolver	(	)	;	File	buffDir	=	new	File	(	buffer	.	getDataDir	(	alloc	)	)	;	zipFile	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_1.java,109,17,111,27,.	createNewFile	(	)	;	URL	url	=	new	URL	(	properties	.	getProperty	(	SITE_CONFIG_URL_PARAMETER_NAME	)	)	;	InputStream	
+</pair>

@@ -1,0 +1,11 @@
+COMPARISON FOR THE FILES: file_47.java - file_49.java
+TOTAL TYPE 1 CODE CLONE PERCENTAGE: 23.97637516260147
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+myCC Results for the files: file_47.java - file_49.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_47.java,5,12,5,75,MessageDigest messagedigest=MessageDigest.getInstance("MD5");
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_49.java,4,12,4,64,MessageDigest md=MessageDigest.getInstance("MD5");
+</pair>

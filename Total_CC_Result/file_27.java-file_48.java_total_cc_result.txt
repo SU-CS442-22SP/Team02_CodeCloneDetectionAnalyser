@@ -1,0 +1,8 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_27.java - file_48.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_48.java,15,19,17,39,getHashString	(	md	.	digest	(	)	)	;	}	catch	(	UnsupportedEncodingException	e	)	{	logger	.	error	(	e	.	getMessage	(	)	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_27.java,5,19,7,36,update	(	password	.	getBytes	(	)	)	;	}	catch	(	Exception	e	)	{	Log	.	error	(	e	.	getMessage	(	)	
+</pair>

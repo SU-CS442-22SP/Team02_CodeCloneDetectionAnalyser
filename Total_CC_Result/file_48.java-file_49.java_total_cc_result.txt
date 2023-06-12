@@ -1,0 +1,8 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_48.java - file_49.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_49.java,4,33,7,30,)	)	;	return	toHexString	(	md	.	digest	(	)	)	;	}	catch	(	NoSuchAlgorithmException	e	)	{	e	.	printStackTrace	(	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_48.java,14,43,17,25,)	)	;	return	getHashString	(	md	.	digest	(	)	)	;	}	catch	(	UnsupportedEncodingException	e	)	{	logger	.	error	(	
+</pair>

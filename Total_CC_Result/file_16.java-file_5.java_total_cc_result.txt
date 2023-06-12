@@ -1,0 +1,8 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_16.java - file_5.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_5.java,11,112,15,27,;	while	(	(	line	=	br	.	readLine	(	)	)	!=	null	)	{	responseString	+=	line	;	}	br	.	close	(	)	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_16.java,13,27,17,27,;	while	(	(	lin	=	readIn	.	readLine	(	)	)	!=	null	)	{	text	+=	lin	;	}	readIn	.	close	(	)	;	
+</pair>

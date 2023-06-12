@@ -1,0 +1,8 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_26.java - file_37.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_37.java,1,11,3,40,void	copyFileToFileWithPaths	(	String	sourcePath	,	String	destinPath	)	throws	Exception	{	BufferedInputStream	in	=	null	;	BufferedOutputStream	out	=	null	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_26.java,1,18,3,31,void	copyFile	(	File	source	,	File	destination	)	throws	IOException	{	FileChannel	in	=	null	;	FileChannel	out	=	null	;	
+</pair>

@@ -1,0 +1,8 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_14.java - file_19.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_19.java,34,16,38,22,commit	)	{	con	.	commit	(	)	;	}	}	catch	(	SQLException	e	)	{	System	.	err	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_14.java,86,31,90,29,e	)	{	e	.	printStackTrace	(	)	;	}	}	catch	(	Throwable	e	)	{	e	.	printStackTrace	
+</pair>

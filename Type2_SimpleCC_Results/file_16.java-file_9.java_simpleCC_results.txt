@@ -1,0 +1,18 @@
+SimpleCC Results for the files: file_16.java - file_9.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_9.java,54,36,57,33,errors	.	add	(	cnfex	)	;	}	catch	(	NoClassDefFoundError	ncdfe	)	{	errors	.	add	(	ncdfe	)	;	}	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_16.java,36,25,39,9,albumArtLabel	.	setIcon	(	ico	)	;	}	catch	(	MalformedURLException	ex1	)	{	MusicBoxView	.	showErrorDialog	(	ex1	)	;	}	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_9.java,56,36,59,33,errors	.	add	(	ncdfe	)	;	}	catch	(	UnsatisfiedLinkError	ule	)	{	errors	.	add	(	ule	)	;	}	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_16.java,36,25,39,9,albumArtLabel	.	setIcon	(	ico	)	;	}	catch	(	MalformedURLException	ex1	)	{	MusicBoxView	.	showErrorDialog	(	ex1	)	;	}	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_9.java,58,36,61,33,errors	.	add	(	ule	)	;	}	catch	(	Exception	exception	)	{	errors	.	add	(	exception	)	;	}	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_16.java,36,25,39,9,albumArtLabel	.	setIcon	(	ico	)	;	}	catch	(	MalformedURLException	ex1	)	{	MusicBoxView	.	showErrorDialog	(	ex1	)	;	}	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_9.java,60,36,64,29,errors	.	add	(	exception	)	;	}	catch	(	Error	error	)	{	errors	.	add	(	error	)	;	}	}	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_16.java,36,25,40,5,albumArtLabel	.	setIcon	(	ico	)	;	}	catch	(	MalformedURLException	ex1	)	{	MusicBoxView	.	showErrorDialog	(	ex1	)	;	}	}	
+</pair>

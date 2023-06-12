@@ -1,0 +1,8 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_25.java - file_26.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_26.java,1,18,5,44,void	copyFile	(	File	source	,	File	destination	)	throws	IOException	{	FileChannel	in	=	null	;	FileChannel	out	=	null	;	try	{	in	=	new	FileInputStream	(	source	)	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_25.java,1,12,5,44,void	copy	(	File	fin	,	File	fout	)	throws	IOException	{	FileOutputStream	out	=	null	;	FileInputStream	in	=	null	;	try	{	out	=	new	FileOutputStream	(	fout	)	
+</pair>

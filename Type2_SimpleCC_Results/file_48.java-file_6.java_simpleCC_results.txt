@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_48.java - file_6.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_6.java,10,23,13,26,err	.	println	(	e	.	toString	(	)	)	;	return	null	;	}	catch	(	IOException	e	)	{	System	.	err	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_48.java,17,12,20,24,logger	.	error	(	e	.	getMessage	(	)	)	;	return	null	;	}	catch	(	NoSuchAlgorithmException	nsae	)	{	logger	.	error	
+</pair>

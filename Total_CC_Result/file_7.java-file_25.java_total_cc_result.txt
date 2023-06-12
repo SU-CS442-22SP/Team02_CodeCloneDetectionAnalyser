@@ -1,0 +1,11 @@
+COMPARISON FOR THE FILES: file_7.java - file_25.java
+TOTAL TYPE 1 CODE CLONE PERCENTAGE: 28.61759662628174
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_7.java,Line:23,} finally {
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_25.java,Line:15,} finally {
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_7.java,Line:27,} finally {
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_25.java,Line:15,} finally {
+<pair>

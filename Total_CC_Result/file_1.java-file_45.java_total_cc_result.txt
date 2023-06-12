@@ -1,0 +1,8 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_1.java - file_45.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_45.java,9,34,11,18,StringBuffer	(	)	;	for	(	int	i	=	0	;	i	<	byteData	.	length	;	i	++	)	{	sb	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_1.java,2,17,4,18,getInstance	(	)	;	for	(	int	i	=	0	;	i	<	args	.	length	;	i	++	)	{	String	
+</pair>

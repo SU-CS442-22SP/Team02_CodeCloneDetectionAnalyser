@@ -1,0 +1,8 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_15.java - file_18.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_18.java,3,92,5,18,)	;	BufferedReader	bufferedReader	=	new	BufferedReader	(	new	InputStreamReader	(	url	.	openStream	(	)	)	)	;	Vector	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_15.java,11,71,13,22,)	;	BufferedReader	readIn	=	new	BufferedReader	(	new	InputStreamReader	(	httpcon	.	getInputStream	(	)	)	)	;	String	
+</pair>

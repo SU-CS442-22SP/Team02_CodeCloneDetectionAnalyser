@@ -1,0 +1,30 @@
+SimpleCC Results for the files: file_32.java - file_36.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,1,4,3,73,public	long	copyFileWithPaths	(	String	userBaseDir	,	String	sourcePath	,	String	destinPath	)	throws	Exception	{	if	(	userBaseDir	.	endsWith	(	sep	)	)	{	userBaseDir	=	userBaseDir	.	substring	(	0	,	userBaseDir	.	length	(	)	-	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,1,4,3,70,public	void	copyHashAllFilesToDirectory	(	String	baseDirStr	,	Hashtable	newNamesTable	,	String	destDirStr	)	throws	Exception	{	if	(	baseDirStr	.	endsWith	(	sep	)	)	{	baseDirStr	=	baseDirStr	.	substring	(	0	,	baseDirStr	.	length	(	)	-	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,2,8,3,73,if	(	userBaseDir	.	endsWith	(	sep	)	)	{	userBaseDir	=	userBaseDir	.	substring	(	0	,	userBaseDir	.	length	(	)	-	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,5,8,6,70,if	(	destDirStr	.	endsWith	(	sep	)	)	{	destDirStr	=	destDirStr	.	substring	(	0	,	destDirStr	.	length	(	)	-	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,18,8,21,49,BufferedInputStream	in	=	null	;	BufferedOutputStream	out	=	null	;	byte	dataBuff	[	]	=	new	byte	[	bufferSize	]	;	File	fileordir	=	new	File	(	file1FullPath	)	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,12,8,15,44,BufferedInputStream	in	=	null	;	BufferedOutputStream	out	=	null	;	byte	dataBuff	[	]	=	new	byte	[	bufferSize	]	;	File	baseDir	=	new	File	(	baseDirStr	)	;	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,30,16,34,52,in	=	new	BufferedInputStream	(	new	FileInputStream	(	file1FullPath	)	,	bufferSize	)	;	out	=	new	BufferedOutputStream	(	new	FileOutputStream	(	file2FullPath	)	,	bufferSize	)	;	int	readLen	;	while	(	(	readLen	=	in	.	read	(	dataBuff	)	)	>	0	)	{	out	.	write	(	dataBuff	,	0	,	readLen	)	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,31,28,35,64,in	=	new	BufferedInputStream	(	new	FileInputStream	(	oldPathFileName	)	,	bufferSize	)	;	out	=	new	BufferedOutputStream	(	new	FileOutputStream	(	newPathFileName	)	,	bufferSize	)	;	int	readLen	;	while	(	(	readLen	=	in	.	read	(	dataBuff	)	)	>	0	)	{	out	.	write	(	dataBuff	,	0	,	readLen	)	;	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,35,45,40,13,;	}	out	.	flush	(	)	;	in	.	close	(	)	;	out	.	close	(	)	;	}	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,35,63,40,25,;	}	out	.	flush	(	)	;	in	.	close	(	)	;	out	.	close	(	)	;	}	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,54,24,58,60,in	=	new	BufferedInputStream	(	new	FileInputStream	(	file1FullPathEntry	)	,	bufferSize	)	;	out	=	new	BufferedOutputStream	(	new	FileOutputStream	(	file2FullPathEntry	)	,	bufferSize	)	;	int	readLen	;	while	(	(	readLen	=	in	.	read	(	dataBuff	)	)	>	0	)	{	out	.	write	(	dataBuff	,	0	,	readLen	)	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,31,28,35,64,in	=	new	BufferedInputStream	(	new	FileInputStream	(	oldPathFileName	)	,	bufferSize	)	;	out	=	new	BufferedOutputStream	(	new	FileOutputStream	(	newPathFileName	)	,	bufferSize	)	;	int	readLen	;	while	(	(	readLen	=	in	.	read	(	dataBuff	)	)	>	0	)	{	out	.	write	(	dataBuff	,	0	,	readLen	)	;	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,59,53,64,21,;	}	out	.	flush	(	)	;	in	.	close	(	)	;	out	.	close	(	)	;	}	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,35,63,40,25,;	}	out	.	flush	(	)	;	in	.	close	(	)	;	out	.	close	(	)	;	}	
+</pair>

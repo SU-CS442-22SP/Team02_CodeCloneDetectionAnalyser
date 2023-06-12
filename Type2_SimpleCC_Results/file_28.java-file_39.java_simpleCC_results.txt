@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_28.java - file_39.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_39.java,29,52,35,21,)	;	}	finally	{	try	{	ins	.	close	(	)	;	}	catch	(	Exception	ex	)	{	}	}	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_28.java,25,41,31,9,)	;	}	finally	{	try	{	ftp	.	disconnect	(	)	;	}	catch	(	IOException	e	)	{	}	}	
+</pair>

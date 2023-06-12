@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_14.java - file_9.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_9.java,12,37,13,60,directory	.	list	(	)	;	for	(	int	i	=	0	;	i	<	files	.	length	;	i	++	)	{	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_14.java,2,8,3,47,LogFrame	.	getInstance	(	)	;	for	(	int	i	=	0	;	i	<	args	.	length	;	i	++	)	{	
+</pair>

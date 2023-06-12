@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_45.java - file_9.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_9.java,12,47,13,60,list	(	)	;	for	(	int	i	=	0	;	i	<	files	.	length	;	i	++	)	{	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_45.java,9,34,10,55,StringBuffer	(	)	;	for	(	int	i	=	0	;	i	<	byteData	.	length	;	i	++	)	{	
+</pair>

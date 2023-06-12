@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_25.java - file_31.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_31.java,10,8,15,37,InputStream	input	=	null	;	OutputStream	output	=	null	;	try	{	input	=	new	FileInputStream	(	source	)	;	output	=	new	FileOutputStream	(	sink	)	;	byte	[	]	buffer	=	new	byte	[	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_25.java,2,8,7,34,FileOutputStream	out	=	null	;	FileInputStream	in	=	null	;	try	{	out	=	new	FileOutputStream	(	fout	)	;	in	=	new	FileInputStream	(	fin	)	;	byte	[	]	buf	=	new	byte	[	
+</pair>

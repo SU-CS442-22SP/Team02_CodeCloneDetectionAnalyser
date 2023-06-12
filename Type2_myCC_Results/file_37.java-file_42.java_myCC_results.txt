@@ -1,0 +1,6 @@
+myCC Results for the files: file_37.java - file_42.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_37.java,15,12,15,24,int readLen;
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_42.java,6,8,6,14,int b;
+</pair>

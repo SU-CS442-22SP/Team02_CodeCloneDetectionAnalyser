@@ -1,0 +1,6 @@
+myCC Results for the files: file_24.java - file_25.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_24.java,5,8,5,36,byte[] buf=new byte[2048];
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_25.java,8,12,8,40,byte[] buf=new byte[2048];
+</pair>

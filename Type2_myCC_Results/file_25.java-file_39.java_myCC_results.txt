@@ -1,0 +1,6 @@
+myCC Results for the files: file_25.java - file_39.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_25.java,3,8,3,36,FileOutputStream out=null;
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_39.java,38,20,38,48,FileOutputStream fos=null;
+</pair>

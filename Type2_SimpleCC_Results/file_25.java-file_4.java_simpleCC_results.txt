@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_25.java - file_4.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_4.java,25,16,28,13,{	if	(	wr	!=	null	)	wr	.	close	(	)	;	if	(	rd	!=	null	)	rd	.	close	(	)	;	}	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_25.java,15,18,18,9,{	if	(	in	!=	null	)	in	.	close	(	)	;	if	(	out	!=	null	)	out	.	close	(	)	;	}	
+</pair>

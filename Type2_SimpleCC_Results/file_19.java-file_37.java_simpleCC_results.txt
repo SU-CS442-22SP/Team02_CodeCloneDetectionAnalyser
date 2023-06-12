@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_19.java - file_37.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_37.java,1,40,4,21,String	sourcePath	,	String	destinPath	)	throws	Exception	{	BufferedInputStream	in	=	null	;	BufferedOutputStream	out	=	null	;	byte	dataBuff	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_19.java,3,39,6,28,long	id	,	boolean	commit	)	throws	SQLException	{	StringBuffer	SQL	=	null	;	Statement	statement	=	null	;	ResultSet	result_set	
+</pair>

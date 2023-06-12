@@ -1,0 +1,10 @@
+SimpleCC Results for the files: file_19.java - file_43.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_43.java,25,44,32,13,;	}	finally	{	if	(	output	!=	null	)	{	try	{	output	.	close	(	)	;	}	catch	(	IOException	ignored	)	{	}	}	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_19.java,42,19,51,13,;	}	finally	{	if	(	statement	!=	null	)	{	try	{	statement	.	close	(	)	;	}	catch	(	SQLException	e	)	{	}	}	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_43.java,33,12,39,9,if	(	reader	!=	null	)	{	try	{	reader	.	close	(	)	;	}	catch	(	IOException	ignored	)	{	}	}	}	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_19.java,44,12,52,2,if	(	statement	!=	null	)	{	try	{	statement	.	close	(	)	;	}	catch	(	SQLException	e	)	{	}	}	}	
+</pair>

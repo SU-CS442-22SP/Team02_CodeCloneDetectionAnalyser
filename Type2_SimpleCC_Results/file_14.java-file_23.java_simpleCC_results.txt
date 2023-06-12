@@ -1,0 +1,10 @@
+SimpleCC Results for the files: file_14.java - file_23.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_23.java,39,51,41,27,.	getBytes	(	)	;	for	(	int	i	=	0	;	i	<	buf	.	length	;	i	++	)	{	content	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_14.java,2,16,4,18,.	getInstance	(	)	;	for	(	int	i	=	0	;	i	<	args	.	length	;	i	++	)	{	String	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_23.java,71,38,73,24,installClassVarStr	.	getBytes	(	)	;	for	(	int	i	=	0	;	i	<	installClassVarBytes	.	length	;	i	++	)	{	contentBytes	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_14.java,2,8,4,18,LogFrame	.	getInstance	(	)	;	for	(	int	i	=	0	;	i	<	args	.	length	;	i	++	)	{	String	
+</pair>

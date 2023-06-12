@@ -17,6 +17,7 @@ import json
 from enum import Enum
 from nltk.tokenize import word_tokenize
 from collections import OrderedDict
+from type1_cc_detector import get_details_2files
 
 source_code_file_extensions = ["h", "c", "cpp", "cc", "java", "py", "cs"]
 file_column_label = "File"
@@ -179,6 +180,7 @@ def main():
     return result
 
 
+
 def run(
     fail_threshold,
     directories,
@@ -275,6 +277,7 @@ def run(
         query_doc_tf_idf = tf_idf[query_doc_bow]
 
         short_source_file_path = source_file.replace(project_root_dir, "")
+        
         conditional_print(
             "\n\n\n"
             + CliColors.HEADER
@@ -306,10 +309,14 @@ def run(
             # Ignore very low similarity
             if similarity_percentage < ignore_threshold:
                 continue
+            file1_ = short_source_file_path
+            
             short_source_path = source.replace(project_root_dir, "")
             code_similarity[short_source_file_path][short_source_path] = round(
                 similarity_percentage, 2
             )
+            file2_ = short_source_path
+            
             if similarity_percentage > fail_threshold:
                 exit_code = ReturnCode.THRESHOLD_EXCEEDED
             color = (
@@ -326,6 +333,7 @@ def run(
                 + CliColors.ENDC,
                 json_output,
             )
+            get_details_2files(file1_, file2_, similarity_percentage)
         # If no similarities found for the particular file, remove it from the report
         if len(code_similarity[short_source_file_path]) == 0:
             del code_similarity[short_source_file_path]
@@ -345,8 +353,8 @@ def run(
                 for second_file in code_similarity[first_file]:
                     writer.writerow(
                         [
-                            first_file,
-                            second_file,
+                            os.path.basename(first_file),
+                            os.path.basename(second_file),
                             code_similarity[first_file][second_file],
                         ]
                     )

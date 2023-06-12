@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_27.java - file_45.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_45.java,13,12,15,21,app	.	setAppid	(	sb	.	toString	(	)	)	;	}	catch	(	NoSuchAlgorithmException	ex	)	{	java	.	util	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_27.java,5,12,7,21,digest	.	update	(	password	.	getBytes	(	)	)	;	}	catch	(	Exception	e	)	{	Log	.	error	
+</pair>

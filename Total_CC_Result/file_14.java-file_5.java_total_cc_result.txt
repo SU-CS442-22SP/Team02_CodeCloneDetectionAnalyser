@@ -1,0 +1,12 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_14.java - file_5.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_5.java,15,16,19,9,br	.	close	(	)	;	}	}	catch	(	ClientProtocolException	e	)	{	e	.	printStackTrace	(	)	;	}	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_14.java,87,16,91,9,e	.	printStackTrace	(	)	;	}	}	catch	(	Throwable	e	)	{	e	.	printStackTrace	(	)	;	}	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_5.java,18,12,21,9,e	.	printStackTrace	(	)	;	}	catch	(	IOException	e	)	{	e	.	printStackTrace	(	)	;	}	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_14.java,85,21,88,13,Main	.	applyUserPreferences	(	)	;	}	catch	(	Exception	e	)	{	e	.	printStackTrace	(	)	;	}	
+</pair>

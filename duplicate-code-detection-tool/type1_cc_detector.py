@@ -25,8 +25,8 @@ def read_java_file(filename):
         return lines
 
 
-def main():
-    directory = "./sample_dataset49"  # replace with your directory
+def get_details_dir(directory_path):
+    directory = directory_path
     java_files = get_java_files(directory)
     min_line_length = 10  # minimum number of characters for a line to be considered
 
@@ -51,5 +51,38 @@ def main():
                             f"<pair>\n{file1},{index1+1},{line1.strip()}\n{file2},{index2+1},{line2.strip()}\n<pair>")
 
 
-if __name__ == "__main__":
-    main()
+
+
+
+def get_details_2files(f1, f2, total_result):
+    min_line_length = 10  # minimum number of characters for a line to be considered
+
+    lines1 = read_java_file(f1)
+    lines2 = read_java_file(f2)
+
+    # Get the base names of the files
+    base_name_f1 = os.path.basename(f1)
+    base_name_f2 = os.path.basename(f2)
+
+    # Prepare the directory and file name
+    results_dir = "./Type1_CC_Results"
+    if not os.path.exists(results_dir):
+        os.makedirs(results_dir)
+    result_file_name = f"{results_dir}/{base_name_f1}-{base_name_f2}_results.txt"
+
+    # Open the file in write mode to clear any previous contents
+    with open(result_file_name, 'w') as result_file:
+        result_file.write(f"COMPARISON FOR THE FILES: {base_name_f1} - {base_name_f2}\n")
+        result_file.write(f"TOTAL TYPE 1 CODE CLONE PERCENTAGE: {total_result}\n\n")
+
+    for index1, line1 in enumerate(lines1):
+        for index2, line2 in enumerate(lines2):
+            if len(line1.strip()) < min_line_length:
+                continue
+            similarity = compare_code_lines(line1.strip(), line2.strip())
+
+            if similarity == 1:  
+                # Open the file in append mode and write the results
+                with open(result_file_name, 'a') as result_file:
+                    result_file.write(
+                        f"<pair>\n{f1},Line:{index1+1},{line1.strip()}\n{f2},Line:{index2+1},{line2.strip()}\n<pair>\n")

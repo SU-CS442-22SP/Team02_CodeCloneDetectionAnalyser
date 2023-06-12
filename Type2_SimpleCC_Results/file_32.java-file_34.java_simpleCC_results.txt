@@ -1,0 +1,30 @@
+SimpleCC Results for the files: file_32.java - file_34.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_34.java,3,8,9,60,if	(	baseDirStr	.	endsWith	(	sep	)	)	{	baseDirStr	=	baseDirStr	.	substring	(	0	,	baseDirStr	.	length	(	)	-	1	)	;	}	if	(	destDirStr	.	endsWith	(	sep	)	)	{	destDirStr	=	destDirStr	.	substring	(	0	,	destDirStr	.	length	(	)	-	1	)	;	}	FileUtils	.	getInstance	(	)	.	createDirectory	(	destDirStr	)	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,2,8,8,60,if	(	baseDirStr	.	endsWith	(	sep	)	)	{	baseDirStr	=	baseDirStr	.	substring	(	0	,	baseDirStr	.	length	(	)	-	1	)	;	}	if	(	destDirStr	.	endsWith	(	sep	)	)	{	destDirStr	=	destDirStr	.	substring	(	0	,	destDirStr	.	length	(	)	-	1	)	;	}	FileUtils	.	getInstance	(	)	.	createDirectory	(	baseDirStr	)	;	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_34.java,3,8,5,9,if	(	baseDirStr	.	endsWith	(	sep	)	)	{	baseDirStr	=	baseDirStr	.	substring	(	0	,	baseDirStr	.	length	(	)	-	1	)	;	}	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,5,8,7,9,if	(	destDirStr	.	endsWith	(	sep	)	)	{	destDirStr	=	destDirStr	.	substring	(	0	,	destDirStr	.	length	(	)	-	1	)	;	}	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_34.java,6,8,8,9,if	(	destDirStr	.	endsWith	(	sep	)	)	{	destDirStr	=	destDirStr	.	substring	(	0	,	destDirStr	.	length	(	)	-	1	)	;	}	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,2,8,4,9,if	(	baseDirStr	.	endsWith	(	sep	)	)	{	baseDirStr	=	baseDirStr	.	substring	(	0	,	baseDirStr	.	length	(	)	-	1	)	;	}	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_34.java,10,8,15,12,BufferedInputStream	in	=	null	;	BufferedOutputStream	out	=	null	;	byte	dataBuff	[	]	=	new	byte	[	bufferSize	]	;	File	baseDir	=	new	File	(	baseDirStr	)	;	baseDir	.	mkdirs	(	)	;	if	(	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,12,8,17,12,BufferedInputStream	in	=	null	;	BufferedOutputStream	out	=	null	;	byte	dataBuff	[	]	=	new	byte	[	bufferSize	]	;	File	baseDir	=	new	File	(	baseDirStr	)	;	baseDir	.	mkdirs	(	)	;	if	(	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_34.java,18,8,19,18,if	(	(	baseDir	.	exists	(	)	)	&&	(	baseDir	.	isDirectory	(	)	)	)	{	String	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,30,24,31,30,if	(	(	f	.	exists	(	)	)	&&	(	f	.	isFile	(	)	)	)	{	in	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_34.java,32,24,36,60,in	=	new	BufferedInputStream	(	new	FileInputStream	(	oldPathFileName	)	,	bufferSize	)	;	out	=	new	BufferedOutputStream	(	new	FileOutputStream	(	newPathFileName	)	,	bufferSize	)	;	int	readLen	;	while	(	(	readLen	=	in	.	read	(	dataBuff	)	)	>	0	)	{	out	.	write	(	dataBuff	,	0	,	readLen	)	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,31,28,35,64,in	=	new	BufferedInputStream	(	new	FileInputStream	(	oldPathFileName	)	,	bufferSize	)	;	out	=	new	BufferedOutputStream	(	new	FileOutputStream	(	newPathFileName	)	,	bufferSize	)	;	int	readLen	;	while	(	(	readLen	=	in	.	read	(	dataBuff	)	)	>	0	)	{	out	.	write	(	dataBuff	,	0	,	readLen	)	;	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_34.java,37,53,42,21,;	}	out	.	flush	(	)	;	in	.	close	(	)	;	out	.	close	(	)	;	}	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,35,63,40,25,;	}	out	.	flush	(	)	;	in	.	close	(	)	;	out	.	close	(	)	;	}	
+</pair>

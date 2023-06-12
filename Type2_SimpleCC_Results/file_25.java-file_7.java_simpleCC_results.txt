@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_25.java - file_7.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_7.java,11,8,15,45,InputStream	in	=	null	;	OutputStream	out	=	null	;	try	{	in	=	new	FileInputStream	(	src	)	;	out	=	new	FileOutputStream	(	dest	)	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_25.java,2,8,6,42,FileOutputStream	out	=	null	;	FileInputStream	in	=	null	;	try	{	out	=	new	FileOutputStream	(	fout	)	;	in	=	new	FileInputStream	(	fin	)	;	
+</pair>

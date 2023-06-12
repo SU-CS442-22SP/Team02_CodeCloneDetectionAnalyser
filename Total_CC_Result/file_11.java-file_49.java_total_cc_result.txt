@@ -1,0 +1,8 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_11.java - file_49.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_49.java,3,12,4,36,MessageDigest	md	=	MessageDigest	.	getInstance	(	"MD5"	)	;	md	.	update	(	s	.	getBytes	(	)	)	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_11.java,12,24,13,55,MessageDigest	md	=	MessageDigest	.	getInstance	(	"MD5"	)	;	md	.	update	(	password	.	getBytes	(	)	)	;	
+</pair>

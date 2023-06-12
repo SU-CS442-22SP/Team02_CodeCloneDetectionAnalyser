@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_16.java - file_18.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_18.java,3,92,5,18,)	;	BufferedReader	bufferedReader	=	new	BufferedReader	(	new	InputStreamReader	(	url	.	openStream	(	)	)	)	;	Vector	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_16.java,9,67,11,24,)	;	BufferedReader	readIn	=	new	BufferedReader	(	new	InputStreamReader	(	httpcon	.	getInputStream	(	)	)	)	;	googleImages	
+</pair>

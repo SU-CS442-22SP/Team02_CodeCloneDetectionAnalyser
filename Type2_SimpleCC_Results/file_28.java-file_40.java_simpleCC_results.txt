@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_28.java - file_40.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_40.java,53,16,55,83,profile	.	setKvp	(	requestKVPs	)	;	profile	.	setHarvestable	(	harvestable	)	;	profile	.	setFormatRequestToXsl	(	SearchXslProfile	.	FORMAT_SEARCH_TO_XSL	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_28.java,7,23,9,51,out	.	println	(	directory	)	;	ftp	.	changeWorkingDirectory	(	directory	)	;	ftp	.	setFileType	(	FTP	.	ASCII_FILE_TYPE	
+</pair>

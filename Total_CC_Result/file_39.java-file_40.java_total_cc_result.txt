@@ -1,0 +1,12 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_39.java - file_40.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_40.java,18,8,19,69,Document	doc	=	builder	.	parse	(	configFile	)	;	NodeList	profileNodes	=	doc	.	getElementsByTagName	(	profileTag	)	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_39.java,13,20,14,68,String	alloc	=	buffer	.	allocate	(	is	)	;	InputStream	ins	=	buffer	.	getDataAsStream	(	alloc	)	;	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_40.java,21,51,23,35,;	XPath	xpath	=	XPathFactory	.	newInstance	(	)	.	newXPath	(	)	;	String	id	=	Val	.	chkStr	(	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_39.java,37,47,39,73,;	String	newTemp	=	UUID	.	randomUUID	(	)	.	toString	(	)	;	IOResolver	ior	=	EGEConfigurationManager	.	getInstance	(	
+</pair>

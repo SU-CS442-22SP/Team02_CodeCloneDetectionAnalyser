@@ -1,0 +1,6 @@
+myCC Results for the files: file_49.java - file_50.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_49.java,4,12,4,64,MessageDigest md=MessageDigest.getInstance("MD5");
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_50.java,3,8,3,71,MessageDigest messageDigest=MessageDigest.getInstance("MD5");
+</pair>

@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_27.java - file_49.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_49.java,5,19,7,30,toHexString	(	md	.	digest	(	)	)	;	}	catch	(	NoSuchAlgorithmException	e	)	{	e	.	printStackTrace	(	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_27.java,5,19,7,22,update	(	password	.	getBytes	(	)	)	;	}	catch	(	Exception	e	)	{	Log	.	error	(	
+</pair>
