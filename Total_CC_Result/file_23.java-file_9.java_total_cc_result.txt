@@ -1,0 +1,12 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_23.java - file_9.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_9.java,12,20,13,60,String	[	]	files	=	directory	.	list	(	)	;	for	(	int	i	=	0	;	i	<	files	.	length	;	i	++	)	{	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_23.java,71,8,72,63,byte	[	]	installClassVarBytes	=	installClassVarStr	.	getBytes	(	)	;	for	(	int	i	=	0	;	i	<	installClassVarBytes	.	length	;	i	++	)	{	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_9.java,12,46,13,60,.	list	(	)	;	for	(	int	i	=	0	;	i	<	files	.	length	;	i	++	)	{	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_23.java,39,51,40,54,.	getBytes	(	)	;	for	(	int	i	=	0	;	i	<	buf	.	length	;	i	++	)	{	
+</pair>

@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_12.java - file_44.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_44.java,10,46,12,19,;	BufferedReader	in	=	new	BufferedReader	(	new	InputStreamReader	(	url	.	openStream	(	)	)	)	;	in	.	read	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_12.java,10,60,12,26,;	BufferedReader	br	=	new	BufferedReader	(	new	InputStreamReader	(	url	.	openStream	(	)	)	)	;	System	.	out	
+</pair>

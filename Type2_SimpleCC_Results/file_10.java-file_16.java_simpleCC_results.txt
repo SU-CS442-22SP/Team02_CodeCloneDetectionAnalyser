@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_10.java - file_16.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_16.java,36,12,38,41,MusicBoxView	.	albumArtLabel	.	setIcon	(	ico	)	;	}	catch	(	MalformedURLException	ex1	)	{	MusicBoxView	.	showErrorDialog	(	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_10.java,28,51,30,31,System	.	out	.	println	(	line	)	;	}	catch	(	IOException	e1	)	{	e1	.	printStackTrace	(	
+</pair>

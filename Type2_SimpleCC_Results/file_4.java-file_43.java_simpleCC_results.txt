@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_4.java - file_43.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_43.java,18,12,22,24,output	=	new	DataOutputStream	(	connection	.	getOutputStream	(	)	)	;	output	.	writeBytes	(	encodedData	)	;	output	.	flush	(	)	;	reader	=	new	BufferedReader	(	new	InputStreamReader	(	connection	.	getInputStream	(	)	)	)	;	String	line	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_4.java,15,12,19,24,wr	=	new	OutputStreamWriter	(	conn	.	getOutputStream	(	)	)	;	wr	.	write	(	data	)	;	wr	.	flush	(	)	;	rd	=	new	BufferedReader	(	new	InputStreamReader	(	conn	.	getInputStream	(	)	)	)	;	String	line	;	
+</pair>

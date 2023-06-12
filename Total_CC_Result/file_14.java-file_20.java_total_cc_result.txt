@@ -1,0 +1,8 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+myCC Results for the files: file_14.java - file_20.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_14.java,74,16,74,50,InputStream is=url.openStream();
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_20.java,7,12,7,49,InputStream input=url.openStream();
+</pair>

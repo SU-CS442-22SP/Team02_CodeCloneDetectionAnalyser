@@ -1,0 +1,10 @@
+SimpleCC Results for the files: file_12.java - file_16.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_16.java,9,67,11,30,)	;	BufferedReader	readIn	=	new	BufferedReader	(	new	InputStreamReader	(	httpcon	.	getInputStream	(	)	)	)	;	googleImages	.	clear	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_12.java,10,59,12,26,)	;	BufferedReader	br	=	new	BufferedReader	(	new	InputStreamReader	(	url	.	openStream	(	)	)	)	;	System	.	out	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_16.java,9,67,11,24,)	;	BufferedReader	readIn	=	new	BufferedReader	(	new	InputStreamReader	(	httpcon	.	getInputStream	(	)	)	)	;	googleImages	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_12.java,40,104,42,26,)	;	BufferedReader	br	=	new	BufferedReader	(	new	InputStreamReader	(	url	.	openStream	(	)	)	)	;	String	
+</pair>

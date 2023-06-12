@@ -1,0 +1,6 @@
+myCC Results for the files: file_1.java - file_5.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_1.java,126,16,126,36,e.printStackTrace();
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_5.java,19,12,19,32,e.printStackTrace();
+</pair>

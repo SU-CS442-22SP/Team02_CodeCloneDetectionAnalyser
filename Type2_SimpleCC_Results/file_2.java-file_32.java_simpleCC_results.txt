@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_2.java - file_32.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,19,16,22,26,Enumeration	enumFiles	=	newNamesTable	.	keys	(	)	;	while	(	enumFiles	.	hasMoreElements	(	)	)	{	String	newName	=	(	String	)	enumFiles	.	nextElement	(	)	;	String	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_2.java,4,8,7,15,Iterator	it	=	classpath	.	iterator	(	)	;	while	(	it	.	hasNext	(	)	)	{	ClassPathEntry	entry	=	(	ClassPathEntry	)	it	.	next	(	)	;	buf	
+</pair>

@@ -1,0 +1,8 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_22.java - file_32.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,35,55,39,40,readLen	)	;	}	out	.	flush	(	)	;	in	.	close	(	)	;	out	.	close	(	)	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_22.java,49,36,53,27,buf	)	;	}	classStream	.	close	(	)	;	reader	.	close	(	)	;	byteWriter	.	close	(	)	;	
+</pair>

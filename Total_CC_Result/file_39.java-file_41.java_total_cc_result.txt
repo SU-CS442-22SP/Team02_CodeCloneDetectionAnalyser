@@ -1,0 +1,8 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_39.java - file_41.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_41.java,7,61,9,17,)	.	toURI	(	)	;	InputStream	is	=	url	.	toURL	(	)	.	openStream	(	)	;	converter	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_39.java,38,53,40,24,)	.	toString	(	)	;	IOResolver	ior	=	EGEConfigurationManager	.	getInstance	(	)	.	getStandardIOResolver	(	)	;	File	
+</pair>

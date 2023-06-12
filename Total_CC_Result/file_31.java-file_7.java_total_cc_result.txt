@@ -1,0 +1,12 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_31.java - file_7.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_7.java,10,20,15,45,;	InputStream	in	=	null	;	OutputStream	out	=	null	;	try	{	in	=	new	FileInputStream	(	src	)	;	out	=	new	FileOutputStream	(	dest	)	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_31.java,9,108,14,48,;	InputStream	input	=	null	;	OutputStream	output	=	null	;	try	{	input	=	new	FileInputStream	(	source	)	;	output	=	new	FileOutputStream	(	sink	)	;	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_7.java,21,16,24,27,out	.	write	(	buffer	,	0	,	read	)	;	}	}	finally	{	if	(	in	!=	null	)	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_31.java,18,31,21,30,output	.	write	(	buffer	,	0	,	bread	)	;	}	}	finally	{	if	(	input	!=	null	)	
+</pair>

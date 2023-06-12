@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_12.java - file_20.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_20.java,16,12,19,31,}	input	.	close	(	)	;	}	catch	(	IOException	io	)	{	System	.	out	.	println	(	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_12.java,16,16,19,35,}	br	.	close	(	)	;	}	catch	(	Exception	e	)	{	System	.	out	.	println	(	
+</pair>

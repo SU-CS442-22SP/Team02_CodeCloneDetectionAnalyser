@@ -1,0 +1,43 @@
+COMPARISON FOR THE FILES: file_3.java - file_2.java
+TOTAL TYPE 1 CODE CLONE PERCENTAGE: 70.83524465560913
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_3.java,Line:1,public Object run() {
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_2.java,Line:12,public Object run() {
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_3.java,Line:3,MessageDigest digest = MessageDigest.getInstance("SHA");
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_2.java,Line:14,MessageDigest digest = MessageDigest.getInstance("SHA");
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_3.java,Line:4,digest.update(buf.toString().getBytes());
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_2.java,Line:15,digest.update(buf.toString().getBytes());
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_3.java,Line:5,byte[] data = digest.digest();
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_2.java,Line:16,byte[] data = digest.digest();
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_3.java,Line:6,serialNum = new BASE64Encoder().encode(data);
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_2.java,Line:17,serialNum = new BASE64Encoder().encode(data);
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_3.java,Line:7,return serialNum;
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_2.java,Line:18,return serialNum;
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_3.java,Line:7,return serialNum;
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_2.java,Line:25,return serialNum;
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_3.java,Line:8,} catch (NoSuchAlgorithmException exp) {
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_2.java,Line:19,} catch (NoSuchAlgorithmException exp) {
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_3.java,Line:9,BootSecurityManager.securityLogger.log(Level.SEVERE, exp.getMessage(), exp);
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_2.java,Line:20,BootSecurityManager.securityLogger.log(Level.SEVERE, exp.getMessage(), exp);
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_3.java,Line:10,return buf.toString();
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_2.java,Line:21,return buf.toString();
+<pair>

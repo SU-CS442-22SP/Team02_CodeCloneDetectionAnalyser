@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_1.java - file_37.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_37.java,7,44,11,52,)	;	if	(	file2	.	exists	(	)	)	{	file2	.	delete	(	)	;	}	FileUtils	.	getInstance	(	)	.	createDirectory	(	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_1.java,104,98,108,41,)	;	if	(	f	.	exists	(	)	)	{	f	.	delete	(	)	;	}	f	.	getParentFile	(	)	.	mkdirs	(	
+</pair>

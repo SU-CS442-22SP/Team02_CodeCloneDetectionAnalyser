@@ -1,0 +1,51 @@
+COMPARISON FOR THE FILES: file_32.java - file_37.java
+TOTAL TYPE 1 CODE CLONE PERCENTAGE: 20.270512998104095
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,Line:12,BufferedInputStream in = null;
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_37.java,Line:2,BufferedInputStream in = null;
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,Line:13,BufferedOutputStream out = null;
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_37.java,Line:3,BufferedOutputStream out = null;
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,Line:14,byte dataBuff[] = new byte[bufferSize];
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_37.java,Line:4,byte dataBuff[] = new byte[bufferSize];
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,Line:33,int readLen;
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_37.java,Line:14,int readLen;
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,Line:34,while ((readLen = in.read(dataBuff)) > 0) {
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_37.java,Line:15,while ((readLen = in.read(dataBuff)) > 0) {
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,Line:35,out.write(dataBuff, 0, readLen);
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_37.java,Line:16,out.write(dataBuff, 0, readLen);
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,Line:37,out.flush();
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_37.java,Line:18,out.flush();
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,Line:38,in.close();
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_37.java,Line:19,in.close();
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,Line:39,out.close();
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_37.java,Line:20,out.close();
+<pair>
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_32.java - file_37.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_37.java,2,8,5,42,BufferedInputStream	in	=	null	;	BufferedOutputStream	out	=	null	;	byte	dataBuff	[	]	=	new	byte	[	bufferSize	]	;	File	file1	=	new	File	(	sourcePath	)	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,12,8,15,44,BufferedInputStream	in	=	null	;	BufferedOutputStream	out	=	null	;	byte	dataBuff	[	]	=	new	byte	[	bufferSize	]	;	File	baseDir	=	new	File	(	baseDirStr	)	;	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_37.java,12,12,21,16,in	=	new	BufferedInputStream	(	new	FileInputStream	(	sourcePath	)	,	bufferSize	)	;	out	=	new	BufferedOutputStream	(	new	FileOutputStream	(	destinPath	)	,	bufferSize	)	;	int	readLen	;	while	(	(	readLen	=	in	.	read	(	dataBuff	)	)	>	0	)	{	out	.	write	(	dataBuff	,	0	,	readLen	)	;	}	out	.	flush	(	)	;	in	.	close	(	)	;	out	.	close	(	)	;	}	else	{	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,31,28,40,32,in	=	new	BufferedInputStream	(	new	FileInputStream	(	oldPathFileName	)	,	bufferSize	)	;	out	=	new	BufferedOutputStream	(	new	FileOutputStream	(	newPathFileName	)	,	bufferSize	)	;	int	readLen	;	while	(	(	readLen	=	in	.	read	(	dataBuff	)	)	>	0	)	{	out	.	write	(	dataBuff	,	0	,	readLen	)	;	}	out	.	flush	(	)	;	in	.	close	(	)	;	out	.	close	(	)	;	}	else	{	
+</pair>

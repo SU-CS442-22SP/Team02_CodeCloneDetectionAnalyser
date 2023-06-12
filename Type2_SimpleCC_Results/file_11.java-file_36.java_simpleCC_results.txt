@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_11.java - file_36.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,23,16,25,34,fileordir	.	isFile	(	)	)	{	File	file2	=	new	File	(	file2FullPath	)	;	if	(	file2	.	exists	(	)	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_11.java,6,17,8,33,rootFolder	.	isEncrypted	(	)	)	{	PasswordDialog	dialog	=	new	PasswordDialog	(	shell	)	;	if	(	dialog	.	open	(	)	
+</pair>

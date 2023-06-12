@@ -1,0 +1,14 @@
+SimpleCC Results for the files: file_33.java - file_37.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_37.java,2,8,5,42,BufferedInputStream	in	=	null	;	BufferedOutputStream	out	=	null	;	byte	dataBuff	[	]	=	new	byte	[	bufferSize	]	;	File	file1	=	new	File	(	sourcePath	)	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,10,8,13,44,BufferedInputStream	in	=	null	;	BufferedOutputStream	out	=	null	;	byte	dataBuff	[	]	=	new	byte	[	bufferSize	]	;	File	baseDir	=	new	File	(	baseDirStr	)	;	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_37.java,12,12,16,48,in	=	new	BufferedInputStream	(	new	FileInputStream	(	sourcePath	)	,	bufferSize	)	;	out	=	new	BufferedOutputStream	(	new	FileOutputStream	(	destinPath	)	,	bufferSize	)	;	int	readLen	;	while	(	(	readLen	=	in	.	read	(	dataBuff	)	)	>	0	)	{	out	.	write	(	dataBuff	,	0	,	readLen	)	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,32,24,36,60,in	=	new	BufferedInputStream	(	new	FileInputStream	(	oldPathFileName	)	,	bufferSize	)	;	out	=	new	BufferedOutputStream	(	new	FileOutputStream	(	newPathFileName	)	,	bufferSize	)	;	int	readLen	;	while	(	(	readLen	=	in	.	read	(	dataBuff	)	)	>	0	)	{	out	.	write	(	dataBuff	,	0	,	readLen	)	;	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_37.java,16,47,21,9,;	}	out	.	flush	(	)	;	in	.	close	(	)	;	out	.	close	(	)	;	}	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,37,53,42,21,;	}	out	.	flush	(	)	;	in	.	close	(	)	;	out	.	close	(	)	;	}	
+</pair>

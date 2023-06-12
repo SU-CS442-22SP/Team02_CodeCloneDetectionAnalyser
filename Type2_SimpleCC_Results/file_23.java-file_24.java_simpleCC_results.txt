@@ -1,0 +1,10 @@
+SimpleCC Results for the files: file_23.java - file_24.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_24.java,4,15,11,11,buf	=	new	byte	[	2048	]	;	int	read	=	zipStream	.	read	(	buf	)	;	while	(	read	>	0	)	{	out	.	write	(	buf	,	0	,	read	)	;	read	=	zipStream	.	read	(	buf	)	;	}	zipStream	.	close	(	)	;	out	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_23.java,54,8,61,23,buf	=	new	byte	[	2048	]	;	int	read	=	reader	.	read	(	buf	)	;	while	(	read	>	0	)	{	content	.	write	(	buf	,	0	,	read	)	;	read	=	reader	.	read	(	buf	)	;	}	reader	.	close	(	)	;	FileInputStream	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_24.java,5,12,11,20,read	=	zipStream	.	read	(	buf	)	;	while	(	read	>	0	)	{	out	.	write	(	buf	,	0	,	read	)	;	read	=	zipStream	.	read	(	buf	)	;	}	zipStream	.	close	(	)	;	out	.	close	(	)	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_23.java,62,8,68,24,read	=	classStream	.	read	(	buf	)	;	while	(	read	>	0	)	{	content	.	write	(	buf	,	0	,	read	)	;	read	=	classStream	.	read	(	buf	)	;	}	classStream	.	close	(	)	;	content	.	close	(	)	;	
+</pair>

@@ -1,0 +1,131 @@
+COMPARISON FOR THE FILES: file_33.java - file_36.java
+TOTAL TYPE 1 CODE CLONE PERCENTAGE: 43.2755708694458
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:2,long plussQuotaSize = 0;
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:17,long plussQuotaSize = 0;
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:10,BufferedInputStream in = null;
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:18,BufferedInputStream in = null;
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:11,BufferedOutputStream out = null;
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:19,BufferedOutputStream out = null;
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:12,byte dataBuff[] = new byte[bufferSize];
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:20,byte dataBuff[] = new byte[bufferSize];
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:20,if (entryList.length > 0) {
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:43,if (entryList.length > 0) {
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:21,for (int pos = 0; pos < entryList.length; pos++) {
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:44,for (int pos = 0; pos < entryList.length; pos++) {
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:22,String entryName = entryList[pos];
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:45,String entryName = entryList[pos];
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:34,int readLen;
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:32,int readLen;
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:34,int readLen;
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:56,int readLen;
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:35,while ((readLen = in.read(dataBuff)) > 0) {
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:33,while ((readLen = in.read(dataBuff)) > 0) {
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:35,while ((readLen = in.read(dataBuff)) > 0) {
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:57,while ((readLen = in.read(dataBuff)) > 0) {
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:36,out.write(dataBuff, 0, readLen);
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:34,out.write(dataBuff, 0, readLen);
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:36,out.write(dataBuff, 0, readLen);
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:58,out.write(dataBuff, 0, readLen);
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:37,plussQuotaSize += readLen;
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:35,plussQuotaSize += readLen;
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:37,plussQuotaSize += readLen;
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:59,plussQuotaSize += readLen;
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:39,out.flush();
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:37,out.flush();
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:39,out.flush();
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:61,out.flush();
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:40,in.close();
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:38,in.close();
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:40,in.close();
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:62,in.close();
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:41,out.close();
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:39,out.close();
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:41,out.close();
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:63,out.close();
+<pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,Line:48,return plussQuotaSize;
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,Line:70,return plussQuotaSize;
+<pair>
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_33.java - file_36.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,2,8,3,73,if	(	userBaseDir	.	endsWith	(	sep	)	)	{	userBaseDir	=	userBaseDir	.	substring	(	0	,	userBaseDir	.	length	(	)	-	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,3,8,4,70,if	(	baseDirStr	.	endsWith	(	sep	)	)	{	baseDirStr	=	baseDirStr	.	substring	(	0	,	baseDirStr	.	length	(	)	-	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,2,8,3,73,if	(	userBaseDir	.	endsWith	(	sep	)	)	{	userBaseDir	=	userBaseDir	.	substring	(	0	,	userBaseDir	.	length	(	)	-	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,6,8,7,70,if	(	destDirStr	.	endsWith	(	sep	)	)	{	destDirStr	=	destDirStr	.	substring	(	0	,	destDirStr	.	length	(	)	-	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,17,31,21,49,;	BufferedInputStream	in	=	null	;	BufferedOutputStream	out	=	null	;	byte	dataBuff	[	]	=	new	byte	[	bufferSize	]	;	File	fileordir	=	new	File	(	file1FullPath	)	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,9,59,13,44,;	BufferedInputStream	in	=	null	;	BufferedOutputStream	out	=	null	;	byte	dataBuff	[	]	=	new	byte	[	bufferSize	]	;	File	baseDir	=	new	File	(	baseDirStr	)	;	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,24,16,29,25,File	file2	=	new	File	(	file2FullPath	)	;	if	(	file2	.	exists	(	)	)	{	plussQuotaSize	-=	file2	.	length	(	)	;	file2	.	delete	(	)	;	}	FileUtils	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,27,24,32,26,File	newFile	=	new	File	(	newPathFileName	)	;	if	(	newFile	.	exists	(	)	)	{	plussQuotaSize	-=	newFile	.	length	(	)	;	newFile	.	delete	(	)	;	}	in	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,30,16,40,13,in	=	new	BufferedInputStream	(	new	FileInputStream	(	file1FullPath	)	,	bufferSize	)	;	out	=	new	BufferedOutputStream	(	new	FileOutputStream	(	file2FullPath	)	,	bufferSize	)	;	int	readLen	;	while	(	(	readLen	=	in	.	read	(	dataBuff	)	)	>	0	)	{	out	.	write	(	dataBuff	,	0	,	readLen	)	;	plussQuotaSize	+=	readLen	;	}	out	.	flush	(	)	;	in	.	close	(	)	;	out	.	close	(	)	;	}	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,32,24,42,21,in	=	new	BufferedInputStream	(	new	FileInputStream	(	oldPathFileName	)	,	bufferSize	)	;	out	=	new	BufferedOutputStream	(	new	FileOutputStream	(	newPathFileName	)	,	bufferSize	)	;	int	readLen	;	while	(	(	readLen	=	in	.	read	(	dataBuff	)	)	>	0	)	{	out	.	write	(	dataBuff	,	0	,	readLen	)	;	plussQuotaSize	+=	readLen	;	}	out	.	flush	(	)	;	in	.	close	(	)	;	out	.	close	(	)	;	}	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,41,38,46,51,)	)	{	String	[	]	entryList	=	fileordir	.	list	(	)	;	if	(	entryList	.	length	>	0	)	{	for	(	int	pos	=	0	;	pos	<	entryList	.	length	;	pos	++	)	{	String	entryName	=	entryList	[	pos	]	;	String	file1FullPathEntry	=	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,18,56,23,44,)	)	{	String	[	]	entryList	=	baseDir	.	list	(	)	;	if	(	entryList	.	length	>	0	)	{	for	(	int	pos	=	0	;	pos	<	entryList	.	length	;	pos	++	)	{	String	entryName	=	entryList	[	pos	]	;	String	oldPathFileName	=	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,47,100,50,42,;	File	file2	=	new	File	(	file2FullPathEntry	)	;	if	(	file2	.	exists	(	)	)	{	plussQuotaSize	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,23,73,26,30,;	File	entryFile	=	new	File	(	oldPathFileName	)	;	if	(	entryFile	.	isFile	(	)	)	{	String	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,47,100,53,33,;	File	file2	=	new	File	(	file2FullPathEntry	)	;	if	(	file2	.	exists	(	)	)	{	plussQuotaSize	-=	file2	.	length	(	)	;	file2	.	delete	(	)	;	}	FileUtils	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,26,77,32,26,;	File	newFile	=	new	File	(	newPathFileName	)	;	if	(	newFile	.	exists	(	)	)	{	plussQuotaSize	-=	newFile	.	length	(	)	;	newFile	.	delete	(	)	;	}	in	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,54,24,68,32,in	=	new	BufferedInputStream	(	new	FileInputStream	(	file1FullPathEntry	)	,	bufferSize	)	;	out	=	new	BufferedOutputStream	(	new	FileOutputStream	(	file2FullPathEntry	)	,	bufferSize	)	;	int	readLen	;	while	(	(	readLen	=	in	.	read	(	dataBuff	)	)	>	0	)	{	out	.	write	(	dataBuff	,	0	,	readLen	)	;	plussQuotaSize	+=	readLen	;	}	out	.	flush	(	)	;	in	.	close	(	)	;	out	.	close	(	)	;	}	}	}	}	else	{	throw	new	Exception	(	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,32,24,46,32,in	=	new	BufferedInputStream	(	new	FileInputStream	(	oldPathFileName	)	,	bufferSize	)	;	out	=	new	BufferedOutputStream	(	new	FileOutputStream	(	newPathFileName	)	,	bufferSize	)	;	int	readLen	;	while	(	(	readLen	=	in	.	read	(	dataBuff	)	)	>	0	)	{	out	.	write	(	dataBuff	,	0	,	readLen	)	;	plussQuotaSize	+=	readLen	;	}	out	.	flush	(	)	;	in	.	close	(	)	;	out	.	close	(	)	;	}	}	}	}	else	{	throw	new	Exception	(	
+</pair>

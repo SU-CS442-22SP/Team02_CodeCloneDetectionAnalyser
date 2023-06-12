@@ -1,0 +1,8 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_1.java - file_33.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_33.java,21,16,22,54,for	(	int	pos	=	0	;	pos	<	entryList	.	length	;	pos	++	)	{	String	entryName	=	entryList	[	pos	]	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_1.java,3,8,4,33,for	(	int	i	=	0	;	i	<	args	.	length	;	i	++	)	{	String	arg	=	args	[	i	]	;	
+</pair>

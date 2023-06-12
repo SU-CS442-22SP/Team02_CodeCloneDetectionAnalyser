@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_1.java - file_11.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_11.java,26,12,29,9,e	.	printStackTrace	(	)	;	}	catch	(	NoSuchAlgorithmException	e	)	{	e	.	printStackTrace	(	)	;	}	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_1.java,123,21,126,13,Main	.	applyUserPreferences	(	)	;	}	catch	(	Exception	e	)	{	e	.	printStackTrace	(	)	;	}	
+</pair>

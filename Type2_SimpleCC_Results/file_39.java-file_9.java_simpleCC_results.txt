@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_39.java - file_9.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_9.java,40,66,42,61,)	;	while	(	e	.	hasMoreElements	(	)	)	{	JarEntry	entry	=	e	.	nextElement	(	)	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_39.java,6,74,8,50,)	;	while	(	iter	.	hasNext	(	)	)	{	FileItemStream	item	=	iter	.	next	(	)	;	
+</pair>

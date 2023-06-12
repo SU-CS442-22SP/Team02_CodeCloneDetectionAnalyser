@@ -1,0 +1,8 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_22.java - file_25.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_25.java,6,12,12,13,in	=	new	FileInputStream	(	fin	)	;	byte	[	]	buf	=	new	byte	[	2048	]	;	int	read	=	in	.	read	(	buf	)	;	while	(	read	>	0	)	{	out	.	write	(	buf	,	0	,	read	)	;	read	=	in	.	read	(	buf	)	;	}	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_22.java,44,24,50,9,classStream	=	new	FileInputStream	(	instClassFile	)	;	byte	[	]	buf	=	new	byte	[	2048	]	;	int	read	=	classStream	.	read	(	buf	)	;	while	(	read	>	0	)	{	byteWriter	.	write	(	buf	,	0	,	read	)	;	read	=	classStream	.	read	(	buf	)	;	}	
+</pair>

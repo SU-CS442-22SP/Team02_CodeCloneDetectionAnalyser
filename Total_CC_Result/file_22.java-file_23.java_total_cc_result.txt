@@ -1,0 +1,20 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_22.java - file_23.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_23.java,2,8,3,66,InputStream	reader	=	getClass	(	)	.	getResourceAsStream	(	"/"	+	instTemplate	)	;	ByteArrayOutputStream	content	=	new	ByteArrayOutputStream	(	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_22.java,3,8,4,54,InputStream	is	=	getClass	(	)	.	getResourceAsStream	(	"/"	+	instTemplate	)	;	InputStreamReader	isr	=	new	InputStreamReader	(	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_23.java,5,58,10,33,;	NumberFormat	nf	=	NumberFormat	.	getInstance	(	Locale	.	US	)	;	nf	.	setGroupingUsed	(	false	)	;	nf	.	setMinimumIntegerDigits	(	installClassVarStr	.	length	(	)	)	;	int	installClassStopPos	=	0	;	long	installClassOffset	=	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_22.java,7,52,12,33,;	NumberFormat	nf	=	NumberFormat	.	getInstance	(	Locale	.	US	)	;	nf	.	setGroupingUsed	(	false	)	;	nf	.	setMinimumIntegerDigits	(	installClassStartStr	.	length	(	)	)	;	int	installClassStartPos	=	0	;	long	installClassOffset	=	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_23.java,54,8,61,23,buf	=	new	byte	[	2048	]	;	int	read	=	reader	.	read	(	buf	)	;	while	(	read	>	0	)	{	content	.	write	(	buf	,	0	,	read	)	;	read	=	reader	.	read	(	buf	)	;	}	reader	.	close	(	)	;	FileInputStream	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_22.java,45,15,52,14,buf	=	new	byte	[	2048	]	;	int	read	=	classStream	.	read	(	buf	)	;	while	(	read	>	0	)	{	byteWriter	.	write	(	buf	,	0	,	read	)	;	read	=	classStream	.	read	(	buf	)	;	}	classStream	.	close	(	)	;	reader	
+</pair>
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_23.java,62,8,69,12,read	=	classStream	.	read	(	buf	)	;	while	(	read	>	0	)	{	content	.	write	(	buf	,	0	,	read	)	;	read	=	classStream	.	read	(	buf	)	;	}	classStream	.	close	(	)	;	content	.	close	(	)	;	byte	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_22.java,46,12,53,18,read	=	classStream	.	read	(	buf	)	;	while	(	read	>	0	)	{	byteWriter	.	write	(	buf	,	0	,	read	)	;	read	=	classStream	.	read	(	buf	)	;	}	classStream	.	close	(	)	;	reader	.	close	(	)	;	byteWriter	
+</pair>

@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_19.java - file_8.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_8.java,24,71,29,41,;	}	finally	{	if	(	fos	!=	null	)	{	try	{	fos	.	close	(	)	;	}	catch	(	IOException	e	)	{	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_19.java,42,19,48,26,;	}	finally	{	if	(	statement	!=	null	)	{	try	{	statement	.	close	(	)	;	}	catch	(	SQLException	e	)	{	
+</pair>

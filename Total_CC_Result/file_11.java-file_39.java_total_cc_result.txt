@@ -1,0 +1,8 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_11.java - file_39.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_39.java,8,16,10,22,FileItemStream	item	=	iter	.	next	(	)	;	if	(	!	item	.	isFormField	(	)	)	{	is	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_11.java,5,12,7,30,Folder	rootFolder	=	view	.	getRootFolder	(	)	;	if	(	!	rootFolder	.	isEncrypted	(	)	)	{	PasswordDialog	
+</pair>

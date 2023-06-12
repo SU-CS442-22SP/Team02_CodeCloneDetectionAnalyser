@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_2.java - file_3.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_3.java,1,12,12,13,public	Object	run	(	)	{	try	{	MessageDigest	digest	=	MessageDigest	.	getInstance	(	"SHA"	)	;	digest	.	update	(	buf	.	toString	(	)	.	getBytes	(	)	)	;	byte	[	]	data	=	digest	.	digest	(	)	;	serialNum	=	new	BASE64Encoder	(	)	.	encode	(	data	)	;	return	serialNum	;	}	catch	(	NoSuchAlgorithmException	exp	)	{	BootSecurityManager	.	securityLogger	.	log	(	Level	.	SEVERE	,	exp	.	getMessage	(	)	,	exp	)	;	return	buf	.	toString	(	)	;	}	}	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_2.java,12,12,23,13,public	Object	run	(	)	{	try	{	MessageDigest	digest	=	MessageDigest	.	getInstance	(	"SHA"	)	;	digest	.	update	(	buf	.	toString	(	)	.	getBytes	(	)	)	;	byte	[	]	data	=	digest	.	digest	(	)	;	serialNum	=	new	BASE64Encoder	(	)	.	encode	(	data	)	;	return	serialNum	;	}	catch	(	NoSuchAlgorithmException	exp	)	{	BootSecurityManager	.	securityLogger	.	log	(	Level	.	SEVERE	,	exp	.	getMessage	(	)	,	exp	)	;	return	buf	.	toString	(	)	;	}	}	
+</pair>

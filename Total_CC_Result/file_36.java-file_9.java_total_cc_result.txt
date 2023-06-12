@@ -1,0 +1,8 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_36.java - file_9.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_9.java,11,16,12,54,if	(	directory	.	exists	(	)	)	{	String	[	]	files	=	directory	.	list	(	)	;	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_36.java,41,12,42,54,if	(	fileordir	.	isDirectory	(	)	)	{	String	[	]	entryList	=	fileordir	.	list	(	)	;	
+</pair>

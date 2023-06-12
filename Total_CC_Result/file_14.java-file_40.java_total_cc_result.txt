@@ -1,0 +1,8 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_14.java - file_40.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_40.java,5,75,7,35,)	;	if	(	configuration_folder_path	==	null	||	configuration_folder_path	.	length	(	)	==	0	)	{	Properties	properties	=	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_14.java,42,79,44,24,)	;	if	(	s	==	null	||	s	.	length	(	)	==	0	)	{	File	f	=	
+</pair>

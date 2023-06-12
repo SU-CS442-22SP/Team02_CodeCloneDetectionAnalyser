@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_40.java - file_41.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_41.java,8,20,10,12,is	=	url	.	toURL	(	)	.	openStream	(	)	;	converter	.	convert	(	is	)	;	File	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_40.java,43,16,45,23,profile	=	xslProfileClass	.	getClass	(	)	.	newInstance	(	)	;	profile	.	setId	(	id	)	;	profile	
+</pair>

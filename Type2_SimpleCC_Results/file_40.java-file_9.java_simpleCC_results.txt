@@ -1,0 +1,6 @@
+SimpleCC Results for the files: file_40.java - file_9.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_9.java,7,12,10,32,knownLocations	.	add	(	location	)	;	for	(	int	loc	=	0	;	loc	<	knownLocations	.	size	(	)	;	loc	++	)	{	URL	url	=	knownLocations	.	get	(	loc	)	;	File	directory	=	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_40.java,19,32,22,25,doc	.	getElementsByTagName	(	profileTag	)	;	for	(	int	i	=	0	;	i	<	profileNodes	.	getLength	(	)	;	i	++	)	{	Node	currProfile	=	profileNodes	.	item	(	i	)	;	XPath	xpath	=	
+</pair>

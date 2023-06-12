@@ -1,0 +1,8 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SimpleCC Results for the files: file_32.java - file_9.java
+
+<pair>
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_9.java,40,46,42,44,e	=	jarFile	.	entries	(	)	;	while	(	e	.	hasMoreElements	(	)	)	{	JarEntry	entry	=	
+C:\Users\mertk\Desktop\CS442\Team02_CodeCloneDetectionAnalyser\DATASET_DEMO\file_32.java,19,28,21,36,enumFiles	=	newNamesTable	.	keys	(	)	;	while	(	enumFiles	.	hasMoreElements	(	)	)	{	String	newName	=	
+</pair>
